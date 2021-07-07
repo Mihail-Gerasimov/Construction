@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L-Digital</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- --- -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <!-- fonts -->
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- bootstrap -->
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <!-- styles -->
+
+</head>
+
+<body>
+    <!-- modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0 flex-column">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-form d-flex flex-column align-items-center">
+                        <h4 class="modal-title mb-2 color-red">Оставьте заявку</h4>
+                        <p class="modal-text mb-2">Для сотрудничества с нами
+                            оставьте свои данные.</p>
+                        <form class="form-modal d-flex flex-column w-100" action="">
+                            <input class="modal-input mb-2" placeholder="Ваше Имя" type="text">
+                            <input class="modal-input mb-3" placeholder="+7 (___) ___ - __ - __" type="tel">
+                            <button
+                                class=" w-100 bg-red color-white general-btn header-btn modal-btn position-relative">Хочу
+                                клиентов</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-thanks" style="display: none;">
+        <div
+            class="modal-content border-0 h-100 d-flex flex-column align-items-center justify-content-center position-relative">
+            <img class="modal-picture mb-5" src="./img/1-modal/ok.png" alt="">
+            <h3 class="modal-title color-red mb-2">Заявка отправлена</h3>
+            <p class="modal-text">Мы получили вашу заявку. <br> Наш менеджер свяжится с вами.</p>
+            <div class="closed position-absolute"><img src="./img/1-modal/closed.png" alt=""></div>
+        </div>
+    </div>
+    <!-- modal -->
+
+    <!-- nav -->
+    <nav class="navigation">
+        <div class="container bg-red">
+            <div class="navigation-line py-3 d-flex justify-content-between align-items-center position-relative">
+
+                <img class="burder-menu d-md-none d-md-flex" src="./img/2-nav/burger.png" alt="">
+                <img class="logo" src="./img/2-nav/logo.png" alt="">
+
+                <div class="navigation-block d-md-flex d-none">
+                    <a class="navigation-block__item color-white me-lg-3 me-2" href="#about">О нас</a>
+                    <a class="navigation-block__item color-white me-lg-3 me-2" href="#cases">Наши кейсы</a>
+                    <a class="navigation-block__item color-white me-lg-3 me-2" href="#price">Прайс</a>
+                    <a class="navigation-block__item color-white" href="#contacts">Контакты</a>
+                </div>
+
+                <div class="navigation-block__mobile  d-none flex-column py-4 ps-3 bg-red position-absolute">
+                    <a class="navigation-block__item color-white me-lg-3 mb-3" href="#about">О нас</a>
+                    <a class="navigation-block__item color-white me-lg-3 mb-3" href="#cases">Наши кейсы</a>
+                    <a class="navigation-block__item color-white me-lg-3 mb-3" href="#price">Прайс</a>
+                    <a class="navigation-block__item color-white" href="#contacts">Контакты</a>
+                </div>
+
+                <a class="number-desctop color-white d-md-inline-block d-none" href="tel:+78005001871">+7 (800)
+                    500-18-71</a>
+
+                <a class="number-mobile d-md-none d-block" href="tel:+78005001871"><img
+                        src="./img/2-nav/mobile-phone.png" alt=""></a>
+
+            </div>
+        </div>
+    </nav>
+    <!-- nav -->
+
+    <div class="wrapper-container">
+
+        <!-- header -->
+        <section class="header mt-sm-2 mt-0 overflow-hidden">
+            <div class="container position-relative">
+                <div class="header-content__mobile w-100 position-relative d-sm-none d-block">
+                    <img class="maket" src="./img/3-header/maket.png" alt="">
+                    <img class="cloud position-absolute" src="./img/3-header/cloud.png" alt="">
+                    <img class="builder position-absolute" src="./img/3-header/builder.png" alt="">
+                </div>
+                <div class="header-content">
+                    <h1 class="title-header color-red mb-1">Зачем ждать месяцами?</h1>
+                    <p class="header-text mb-3">Получите поток клиентов на строительство домов уже <span>через три
+                            дня!</span></p>
+                    <button class="bg-red color-white general-btn header-btn position-relative" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">Хочу получать
+                        заявки</button>
+                </div>
+                <img class="cloud position-absolute d-sm-block d-none" src="./img/3-header/cloud.png" alt="">
+                <img class="builder position-absolute d-sm-block d-none" src="./img/3-header/builder.png" alt="">
+                <img class="maket position-absolute d-sm-block d-none" src="./img/3-header/maket.png" alt="">
+            </div>
+        </section>
+        <!-- header -->
+
+        <!-- prod -->
+        <section class="prod overflow-hidden">
+            <div class="container bg-white position-relative">
+                <div class="prod-block pt-4">
+                    <h2 class="general-title general-title-uder">Что вы получите, сотрудничая с нами?</h2>
+                    <p class="prod-text">
+                        Мы решим вашу проблему нехватки клиентов. <span>Избавим вас от головной боли, которая мешает
+                            вашему бизнесу зарабатывать больше!</span>
+                    </p>
+                    <div class="prod-step d-flex flex-wrap flex-md-row flex-column">
+                        <div class="prod-step__item mb-md-3 mb-5 me-md-3 me-0 position-relative">
+                            <div class="prod-line position-absolute bg-red"></div>
+                            <img class="prod-img mb-3" src="./img/4-prod/p-one.png" alt="">
+                            <p class="prid-step__item--text">Мы поддерживаем своих партнеров 24/7 и работаем только с
+                                онлайн-базами</p>
+                        </div>
+                        <div class="prod-step__item mb-md-3 mb-5 me-md-3 me-0 position-relative">
+                            <div class="prod-line position-absolute bg-red"></div>
+                            <img class="prod-img mb-3" src="./img/4-prod/p-two.png" alt="">
+                            <p class="prid-step__item--text">Мы используем свои
+                                сайты, которые точно
+                                дают высокую конверсию</p>
+                        </div>
+                        <div class="prod-step__item mb-md-3 mb-5 position-relative">
+                            <!-- <div class="prod-line position-absolute bg-red"></div> -->
+                            <img class="prod-img mb-3" src="./img/4-prod/p-three.png" alt="">
+                            <p class="prid-step__item--text">Вы легко будете получать
+                                заявки, которые перерастут
+                                в потенциальных клиентов</p>
+                        </div>
+                    </div>
+                </div>
+                <img class="prod-grid d-md-block d-none position-absolute" src="./img/4-prod/grid.png" alt="">
+                <img class="grid-mobile d-md-none d-block position-absolute" src="./img/4-prod/grid-mobile.png" alt="">
+            </div>
+        </section>
+        <!-- prod -->
+
+    </div>
+
+    <!-- more -->
+    <section class="more">
+        <div class="container more-fon bg-red">
+            <div class="more-block d-flex justify-content-center align-items-center flex-sm-row flex-column">
+                <div class="many-more d-sm-block d-flex align-items-center flex-column">
+                    <h2 class="general-title mb-3 color-white">Хотите больше заявок?</h2>
+                    <p class="more-information mb-4 color-white">Не стоит ждать, свяжитесь с нами <span>прямо
+                            сейчас!</span></p>
+                    <button class="general-btn bg-white more-btn position-relative" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">Хочу получать заявки</button>
+                </div>
+                <img class="m-phone" src="./img/5-more/m-phone.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- more -->
+
+    <div class="wrapper-container">
+
+        <!-- cases -->
+        <section id="cases" class="cases position-relative">
+            <div class="container bg-white position-relative">
+                <h2 class="ps-sm-0 ps-3 general-title general-title-uder general-title-unde-cases d-lg-none d-block">
+                    Наши кейсы
+                </h2>
+                <div
+                    class="cases-block d-flex flex-column flex-sm-row justify-content-md-center justify-content-between position-relative">
+                    <h2 class="title-cases color-red position-absolute d-lg-block d-none">
+                        Наши кейсы
+                    </h2>
+                    <div class="block__cities mb-sm-0 mb-3">
+                        <h4 class="ps-sm-0 ps-3 cities-title">г. Казань</h4>
+                        <div
+                            class="mb-3 mb-xl-4 d-flex flex-column flex-md-row align-items-start align-items-md-center">
+                            <h2 class="color-red cases-nubber mb-2 mb-md-0 me-0 me-md-3">411</h2>
+                            <p class="ps-sm-0 ps-3 applications-per-month__item">заявок <br> в месяц</p>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center">
+                            <h2 class="color-red cases-nubber mb-2 mb-md-0 me-0 me-md-3">21</h2>
+                            <p class="ps-sm-0 ps-3 applications-per-month__item">договора на <br> строительство <br>
+                                домов</p>
+                        </div>
+                    </div>
+                    <div class="block-statistics">
+                        <img class="mb-2 mb-sm-4" src="./img/6-cases/case-1-1.png" alt="">
+                        <img src="./img/6-cases/case-1-2.png" alt="">
+                    </div>
+                </div>
+
+                <div
+                    class="cases-block d-flex flex-column flex-sm-row justify-content-md-center justify-content-between">
+                    <div class="block__cities">
+                        <h4 class="ps-sm-0 ps-3 cities-title mb-sm-0 mb-3">г. Санкт-Петербург</h4>
+                        <div
+                            class="mb-3 mb-xl-4 d-flex flex-column flex-md-row align-items-start align-items-md-center">
+                            <h2 class="color-red cases-nubber mb-2 mb-md-0 me-0 me-md-3">553</h2>
+                            <p class="ps-sm-0 ps-3 applications-per-month__item">заявок <br> в месяц</p>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center">
+                            <h2 class="color-red cases-nubber mb-2 mb-md-0 me-0 me-md-3">33</h2>
+                            <p class="ps-sm-0 ps-3 applications-per-month__item">договора на <br> строительство <br>
+                                домов</p>
+                        </div>
+                    </div>
+                    <div class="block-statistics">
+                        <img class="mb-2 mb-sm-4" src="./img/6-cases/case-2-1.png" alt="">
+                        <img src="./img/6-cases/case-2-2.png" alt="">
+                    </div>
+                </div>
+
+                <div
+                    class="cases-block d-flex flex-column flex-sm-row justify-content-md-center justify-content-between mb-0">
+                    <div class="block__cities">
+                        <h4 class="ps-sm-0 ps-3 cities-title mb-sm-0 mb-3">г. Уфа</h4>
+                        <div
+                            class="mb-3 mb-xl-4 d-flex flex-column flex-md-row align-items-start align-items-md-center">
+                            <h2 class="color-red cases-nubber mb-2 mb-md-0 me-0 me-md-3">386</h2>
+                            <p class="ps-sm-0 ps-3 applications-per-month__item">заявок <br> в месяц</p>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center">
+                            <h2 class="color-red cases-nubber mb-2 mb-md-0 me-0 me-md-3">19</h2>
+                            <p class="ps-sm-0 ps-3 applications-per-month__item">договора на <br> строительство <br>
+                                домов</p>
+                        </div>
+                    </div>
+                    <div class="block-statistics">
+                        <img class="mb-2 mb-sm-4" src="./img/6-cases/case-3-1.png" alt="">
+                        <img src="./img/6-cases/case-3-2.png" alt="">
+                    </div>
+                </div>
+                <img class="transform-top position-absolute" src="./img/6-cases/grid-transform.png" alt="">
+                <img class="transform-center position-absolute" src="./img/6-cases/grid-transform.png" alt="">
+                <img class="transform-bottom position-absolute" src="./img/6-cases/grid-transform.png" alt="">
+            </div>
+        </section>
+        <!-- cases -->
+
+    </div>
+
+    <!-- stages -->
+    <section class="stages">
+        <div class="container bg-red position-relative">
+            <div class="stages-block">
+                <h2 class="general-title stages-title general-title-uder-stages color-white general-title-uder">
+                    Как наша команда будет работать над привлечением клиентов для вашего бизнеса??
+                </h2>
+                <div class="stages-block__info d-flex align-items-center justify-content-between">
+                    <p class="stages-text color-white me-md-2 me-0">
+                        Ознакомьтесь с тем, какими путями идут наши специалисты, чтобы привлечь потенциальных клиентов
+                    </p>
+                    <button class="general-btn bg-white more-btn position-relative d-md-block d-none"
+                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Хочу получать
+                        заявки</button>
+                </div>
+                <div class="stages-steps d-md-flex d-none flex-column position-relative">
+
+                    <div class="stages-step__element d-flex align-items-end mb-5 justify-content-start">
+                        <p class="stages-steps__text color-white s-1">Подготавливаем <br> для вас сайт</p>
+                        <h4 class="stages-number color-white s-2">02</h4>
+                        <p class="stages-steps__text color-white s-3">Настраиваем и поддерживаем таргет в Instagram и
+                            Facebook, которые приносят вам больше клиентов и прибыли
+                        </p>
+                        <h4 class="stages-number color-white s-4">04</h4>
+                    </div>
+
+                    <div class="stages-step__element d-flex align-items-start justify-content-start">
+                        <h4 class="stages-number color-white s-5">01</h4>
+                        <p class="stages-steps__text color-white s-6">Создаем и ведем рекламные кампании в Яндекс и
+                            Google
+                            Ads, которые приносят максимально качественный результат
+                        </p>
+                        <h4 class="stages-number color-white s-7">03</h4>
+                        <p class="stages-steps__text color-white s-8">Применяем альтернативные пути и ресурсы, создаем
+                            креативы, баннеры, проводим A/B тестирование
+                        </p>
+                    </div>
+
+                    <div class="stages-line bg-white position-absolute"></div>
+                    <div class="stages-circle pc-1 position-absolute"></div>
+                    <div class="stages-circle pc-2 position-absolute"></div>
+                    <div class="stages-circle pc-3 position-absolute"></div>
+                    <div class="stages-circle pc-4 position-absolute"></div>
+                </div>
+
+                <div class="stages-steps__mobile d-md-none d-flex flex-column ps-3 position-relative">
+
+                    <div class="stages-step__element d-flex flex-column mb-4">
+                        <h4 class="stages-number color-white mb-2">01</h4>
+                        <p class="stages-steps__text color-white">Подготавливаем <br> для вас сайт</p>
+                    </div>
+
+                    <div class="stages-step__element d-flex flex-column mb-4">
+                        <h4 class="stages-number color-white mb-2">02</h4>
+                        <p class="stages-steps__text color-white">Создаем и ведем рекламные кампании в Яндекс и Google
+                            Ads, которые приносят максимально качественный результат
+                        </p>
+                    </div>
+
+                    <div class="stages-step__element d-flex flex-column mb-4">
+                        <h4 class="stages-number color-white mb-2">03</h4>
+                        <p class="stages-steps__text color-white">Настраиваем и поддерживаем таргет в Instagram и
+                            Facebook, которые приносят вам больше клиентов и прибыли</p>
+                    </div>
+
+                    <div class="stages-step__element d-flex flex-column mb-5">
+                        <h4 class="stages-number color-white mb-2">04</h4>
+                        <p class="stages-steps__text color-white">Применяем альтернативные пути и ресурсы, создаем
+                            креативы, баннеры, проводим A/B тестирование</p>
+                    </div>
+
+                    <div class="stages-line bg-white position-absolute"></div>
+                    <div class="stages-circle pc-1 position-absolute"></div>
+                    <div class="stages-circle pc-2 position-absolute"></div>
+                    <div class="stages-circle pc-3 position-absolute"></div>
+                    <div class="stages-circle pc-4 position-absolute"></div>
+                    <button class="general-btn stages-btn bg-white more-btn position-relative d-mb-none d-block"
+                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Хочу
+                        получать
+                        заявки</button>
+                </div>
+            </div>
+            <img class="stages-handly position-absolute" src="./img/7-stages/grafics.png" alt="">
+        </div>
+    </section>
+    <!-- stages -->
+
+    <div class="wrapper-container">
+
+        <!-- price -->
+        <section id="price" class="price">
+            <div class="container bg-white position-relative">
+                <div class="price-block">
+                    <h2 class="general-title general-title-uder">Наш прайс</h2>
+                    <div
+                        class="price-block__content d-flex flex-wrap justify-content-md-start justify-content-center mb-md-0 mb-5">
+                        <div class="price__card me-md-3 me-auto mx-md-0 mx-auto mb-3">
+                            <h4 class="price-title-card">Пакет стандарт</h4>
+                            <h3 class="price-title-money color-white bg-red mb-4">20 000 руб</h3>
+                            <ul class="price-list">
+                                <li class="price-list__item d-flex align-items-center mb-3">
+                                    <svg class="price-svg me-2" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.5259 2.10231C20.5185 2.06695 20.5041 2.03117 20.48 1.99582C19.4205 0.438478 16.7637 0.522629 15.1113 0.503434C14.9452 0.501482 14.8642 0.673363 14.9002 0.805229C14.7528 0.845353 14.6137 0.899249 14.4942 0.982207C12.7956 2.16141 11.986 4.63736 11.1839 6.44249C10.416 8.17074 9.54785 9.84693 8.80101 11.5851C8.4836 12.3239 7.6346 13.8154 7.50111 14.9495C6.02304 12.2423 4.65136 9.49146 3.33075 6.70091C3.26123 6.55397 3.10248 6.53597 2.97679 6.59247C2.64908 6.4015 2.22507 6.55039 1.87784 6.6379C1.4046 6.7573 0.910857 6.89784 0.468955 7.10854C0.397058 7.14281 0.356284 7.19161 0.330474 7.24431C0.17139 7.17632 -0.0466877 7.31242 0.00883473 7.5165C1.19855 11.8924 4.49628 15.5767 6.19069 19.7814C6.25218 19.9341 6.3796 20.007 6.51168 20.024C6.54313 20.0882 6.59714 20.1402 6.68053 20.1589C7.30396 20.299 7.92794 20.3733 8.5646 20.4243C9.12124 20.4688 9.77102 20.5817 10.3105 20.4163C10.4966 20.3592 10.5719 20.1847 10.5439 20.0276C10.5878 20.0194 10.6342 19.9935 10.6826 19.9402C10.7385 19.8789 10.6818 19.8002 10.6074 19.811C11.0522 19.7469 11.4589 17.7873 11.5835 17.447C11.9823 16.3585 12.4202 15.2839 12.858 14.2105C13.1114 13.5897 13.3955 12.9753 13.7003 12.3667C13.8194 12.1543 13.9298 11.9352 14.0369 11.7134C15.7747 8.44813 18.1574 5.38475 20.5104 2.6636C20.6701 2.47914 20.6401 2.25673 20.5259 2.10231ZM2.6391 7.41262C2.61394 7.36544 2.59041 7.31708 2.56601 7.26936C2.68454 7.24063 2.80046 7.20614 2.9024 7.15051C2.92192 7.20527 2.94437 7.25885 2.9641 7.31339C2.85132 7.29669 2.72737 7.33465 2.6391 7.41262ZM4.45085 11.0531C4.42872 11.0222 4.40877 10.99 4.38632 10.9591C4.38264 10.954 4.37754 10.9524 4.37364 10.9476C4.3179 10.7205 4.25728 10.4953 4.1895 10.2728C4.19059 10.2709 4.19156 10.2691 4.19265 10.2673C4.30391 10.507 4.41582 10.7463 4.5312 10.9843C4.50127 11.0027 4.4759 11.028 4.45085 11.0531ZM9.2736 19.6906C9.33097 19.6093 9.34495 19.5014 9.3224 19.4018C9.39343 19.3509 9.46088 19.295 9.52681 19.2371C9.51456 19.2879 9.49938 19.3375 9.48734 19.3884C9.45817 19.5124 9.49146 19.6099 9.55208 19.6812C9.45925 19.6826 9.36643 19.6864 9.2736 19.6906ZM11.5944 15.1212C11.5174 15.3165 11.4289 15.5228 11.3351 15.7359C11.3408 15.6906 11.3464 15.645 11.3511 15.5991C11.4654 15.2967 11.5888 14.9965 11.7122 14.6965C11.7384 14.6775 11.7657 14.6598 11.7914 14.6406C11.7254 14.8008 11.6579 14.9601 11.5944 15.1212ZM13.7602 10.6135C13.3762 11.2934 13.0105 11.9828 12.6691 12.6836C12.5624 12.8371 12.4505 12.9856 12.333 13.1286C12.7998 12.2309 13.3104 11.3562 13.8157 10.4794C13.7975 10.5243 13.7787 10.5688 13.7602 10.6135ZM16.4171 2.55798C16.4439 2.51124 16.4707 2.4645 16.4999 2.41831C16.6205 2.26768 16.7376 2.1099 16.8499 1.93823C16.8624 1.93813 16.8746 1.93682 16.8871 1.93693C16.96 1.95699 17.0328 1.97716 17.1057 1.99994C17.0324 2.00709 16.9579 2.03301 16.8902 2.10036C16.7316 2.2576 16.5748 2.40909 16.4171 2.55798Z"
+                                            fill="#990000" />
+                                    </svg>
+                                    <p class="price-list__item--text">Сайт</p>
+
+                                </li>
+                                <li class="price-list__item d-flex align-items-center mb-3">
+                                    <svg class="price-svg me-2" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.5259 2.10231C20.5185 2.06695 20.5041 2.03117 20.48 1.99582C19.4205 0.438478 16.7637 0.522629 15.1113 0.503434C14.9452 0.501482 14.8642 0.673363 14.9002 0.805229C14.7528 0.845353 14.6137 0.899249 14.4942 0.982207C12.7956 2.16141 11.986 4.63736 11.1839 6.44249C10.416 8.17074 9.54785 9.84693 8.80101 11.5851C8.4836 12.3239 7.6346 13.8154 7.50111 14.9495C6.02304 12.2423 4.65136 9.49146 3.33075 6.70091C3.26123 6.55397 3.10248 6.53597 2.97679 6.59247C2.64908 6.4015 2.22507 6.55039 1.87784 6.6379C1.4046 6.7573 0.910857 6.89784 0.468955 7.10854C0.397058 7.14281 0.356284 7.19161 0.330474 7.24431C0.17139 7.17632 -0.0466877 7.31242 0.00883473 7.5165C1.19855 11.8924 4.49628 15.5767 6.19069 19.7814C6.25218 19.9341 6.3796 20.007 6.51168 20.024C6.54313 20.0882 6.59714 20.1402 6.68053 20.1589C7.30396 20.299 7.92794 20.3733 8.5646 20.4243C9.12124 20.4688 9.77102 20.5817 10.3105 20.4163C10.4966 20.3592 10.5719 20.1847 10.5439 20.0276C10.5878 20.0194 10.6342 19.9935 10.6826 19.9402C10.7385 19.8789 10.6818 19.8002 10.6074 19.811C11.0522 19.7469 11.4589 17.7873 11.5835 17.447C11.9823 16.3585 12.4202 15.2839 12.858 14.2105C13.1114 13.5897 13.3955 12.9753 13.7003 12.3667C13.8194 12.1543 13.9298 11.9352 14.0369 11.7134C15.7747 8.44813 18.1574 5.38475 20.5104 2.6636C20.6701 2.47914 20.6401 2.25673 20.5259 2.10231ZM2.6391 7.41262C2.61394 7.36544 2.59041 7.31708 2.56601 7.26936C2.68454 7.24063 2.80046 7.20614 2.9024 7.15051C2.92192 7.20527 2.94437 7.25885 2.9641 7.31339C2.85132 7.29669 2.72737 7.33465 2.6391 7.41262ZM4.45085 11.0531C4.42872 11.0222 4.40877 10.99 4.38632 10.9591C4.38264 10.954 4.37754 10.9524 4.37364 10.9476C4.3179 10.7205 4.25728 10.4953 4.1895 10.2728C4.19059 10.2709 4.19156 10.2691 4.19265 10.2673C4.30391 10.507 4.41582 10.7463 4.5312 10.9843C4.50127 11.0027 4.4759 11.028 4.45085 11.0531ZM9.2736 19.6906C9.33097 19.6093 9.34495 19.5014 9.3224 19.4018C9.39343 19.3509 9.46088 19.295 9.52681 19.2371C9.51456 19.2879 9.49938 19.3375 9.48734 19.3884C9.45817 19.5124 9.49146 19.6099 9.55208 19.6812C9.45925 19.6826 9.36643 19.6864 9.2736 19.6906ZM11.5944 15.1212C11.5174 15.3165 11.4289 15.5228 11.3351 15.7359C11.3408 15.6906 11.3464 15.645 11.3511 15.5991C11.4654 15.2967 11.5888 14.9965 11.7122 14.6965C11.7384 14.6775 11.7657 14.6598 11.7914 14.6406C11.7254 14.8008 11.6579 14.9601 11.5944 15.1212ZM13.7602 10.6135C13.3762 11.2934 13.0105 11.9828 12.6691 12.6836C12.5624 12.8371 12.4505 12.9856 12.333 13.1286C12.7998 12.2309 13.3104 11.3562 13.8157 10.4794C13.7975 10.5243 13.7787 10.5688 13.7602 10.6135ZM16.4171 2.55798C16.4439 2.51124 16.4707 2.4645 16.4999 2.41831C16.6205 2.26768 16.7376 2.1099 16.8499 1.93823C16.8624 1.93813 16.8746 1.93682 16.8871 1.93693C16.96 1.95699 17.0328 1.97716 17.1057 1.99994C17.0324 2.00709 16.9579 2.03301 16.8902 2.10036C16.7316 2.2576 16.5748 2.40909 16.4171 2.55798Z"
+                                            fill="#990000" />
+                                    </svg>
+                                    <p class="price-list__item--text">Настройка Яндекс</p>
+
+                                </li>
+                                <li class="price-list__item d-flex align-items-center mb-3">
+                                    <svg class="price-svg me-2" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.5259 2.10231C20.5185 2.06695 20.5041 2.03117 20.48 1.99582C19.4205 0.438478 16.7637 0.522629 15.1113 0.503434C14.9452 0.501482 14.8642 0.673363 14.9002 0.805229C14.7528 0.845353 14.6137 0.899249 14.4942 0.982207C12.7956 2.16141 11.986 4.63736 11.1839 6.44249C10.416 8.17074 9.54785 9.84693 8.80101 11.5851C8.4836 12.3239 7.6346 13.8154 7.50111 14.9495C6.02304 12.2423 4.65136 9.49146 3.33075 6.70091C3.26123 6.55397 3.10248 6.53597 2.97679 6.59247C2.64908 6.4015 2.22507 6.55039 1.87784 6.6379C1.4046 6.7573 0.910857 6.89784 0.468955 7.10854C0.397058 7.14281 0.356284 7.19161 0.330474 7.24431C0.17139 7.17632 -0.0466877 7.31242 0.00883473 7.5165C1.19855 11.8924 4.49628 15.5767 6.19069 19.7814C6.25218 19.9341 6.3796 20.007 6.51168 20.024C6.54313 20.0882 6.59714 20.1402 6.68053 20.1589C7.30396 20.299 7.92794 20.3733 8.5646 20.4243C9.12124 20.4688 9.77102 20.5817 10.3105 20.4163C10.4966 20.3592 10.5719 20.1847 10.5439 20.0276C10.5878 20.0194 10.6342 19.9935 10.6826 19.9402C10.7385 19.8789 10.6818 19.8002 10.6074 19.811C11.0522 19.7469 11.4589 17.7873 11.5835 17.447C11.9823 16.3585 12.4202 15.2839 12.858 14.2105C13.1114 13.5897 13.3955 12.9753 13.7003 12.3667C13.8194 12.1543 13.9298 11.9352 14.0369 11.7134C15.7747 8.44813 18.1574 5.38475 20.5104 2.6636C20.6701 2.47914 20.6401 2.25673 20.5259 2.10231ZM2.6391 7.41262C2.61394 7.36544 2.59041 7.31708 2.56601 7.26936C2.68454 7.24063 2.80046 7.20614 2.9024 7.15051C2.92192 7.20527 2.94437 7.25885 2.9641 7.31339C2.85132 7.29669 2.72737 7.33465 2.6391 7.41262ZM4.45085 11.0531C4.42872 11.0222 4.40877 10.99 4.38632 10.9591C4.38264 10.954 4.37754 10.9524 4.37364 10.9476C4.3179 10.7205 4.25728 10.4953 4.1895 10.2728C4.19059 10.2709 4.19156 10.2691 4.19265 10.2673C4.30391 10.507 4.41582 10.7463 4.5312 10.9843C4.50127 11.0027 4.4759 11.028 4.45085 11.0531ZM9.2736 19.6906C9.33097 19.6093 9.34495 19.5014 9.3224 19.4018C9.39343 19.3509 9.46088 19.295 9.52681 19.2371C9.51456 19.2879 9.49938 19.3375 9.48734 19.3884C9.45817 19.5124 9.49146 19.6099 9.55208 19.6812C9.45925 19.6826 9.36643 19.6864 9.2736 19.6906ZM11.5944 15.1212C11.5174 15.3165 11.4289 15.5228 11.3351 15.7359C11.3408 15.6906 11.3464 15.645 11.3511 15.5991C11.4654 15.2967 11.5888 14.9965 11.7122 14.6965C11.7384 14.6775 11.7657 14.6598 11.7914 14.6406C11.7254 14.8008 11.6579 14.9601 11.5944 15.1212ZM13.7602 10.6135C13.3762 11.2934 13.0105 11.9828 12.6691 12.6836C12.5624 12.8371 12.4505 12.9856 12.333 13.1286C12.7998 12.2309 13.3104 11.3562 13.8157 10.4794C13.7975 10.5243 13.7787 10.5688 13.7602 10.6135ZM16.4171 2.55798C16.4439 2.51124 16.4707 2.4645 16.4999 2.41831C16.6205 2.26768 16.7376 2.1099 16.8499 1.93823C16.8624 1.93813 16.8746 1.93682 16.8871 1.93693C16.96 1.95699 17.0328 1.97716 17.1057 1.99994C17.0324 2.00709 16.9579 2.03301 16.8902 2.10036C16.7316 2.2576 16.5748 2.40909 16.4171 2.55798Z"
+                                            fill="#990000" />
+                                    </svg>
+                                    <p class="price-list__item--text">CRM система</p>
+
+                                </li>
+                                <li class="price-list__item d-flex align-items-center mb-3">
+                                    <svg class="price-svg me-2" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.5259 2.10231C20.5185 2.06695 20.5041 2.03117 20.48 1.99582C19.4205 0.438478 16.7637 0.522629 15.1113 0.503434C14.9452 0.501482 14.8642 0.673363 14.9002 0.805229C14.7528 0.845353 14.6137 0.899249 14.4942 0.982207C12.7956 2.16141 11.986 4.63736 11.1839 6.44249C10.416 8.17074 9.54785 9.84693 8.80101 11.5851C8.4836 12.3239 7.6346 13.8154 7.50111 14.9495C6.02304 12.2423 4.65136 9.49146 3.33075 6.70091C3.26123 6.55397 3.10248 6.53597 2.97679 6.59247C2.64908 6.4015 2.22507 6.55039 1.87784 6.6379C1.4046 6.7573 0.910857 6.89784 0.468955 7.10854C0.397058 7.14281 0.356284 7.19161 0.330474 7.24431C0.17139 7.17632 -0.0466877 7.31242 0.00883473 7.5165C1.19855 11.8924 4.49628 15.5767 6.19069 19.7814C6.25218 19.9341 6.3796 20.007 6.51168 20.024C6.54313 20.0882 6.59714 20.1402 6.68053 20.1589C7.30396 20.299 7.92794 20.3733 8.5646 20.4243C9.12124 20.4688 9.77102 20.5817 10.3105 20.4163C10.4966 20.3592 10.5719 20.1847 10.5439 20.0276C10.5878 20.0194 10.6342 19.9935 10.6826 19.9402C10.7385 19.8789 10.6818 19.8002 10.6074 19.811C11.0522 19.7469 11.4589 17.7873 11.5835 17.447C11.9823 16.3585 12.4202 15.2839 12.858 14.2105C13.1114 13.5897 13.3955 12.9753 13.7003 12.3667C13.8194 12.1543 13.9298 11.9352 14.0369 11.7134C15.7747 8.44813 18.1574 5.38475 20.5104 2.6636C20.6701 2.47914 20.6401 2.25673 20.5259 2.10231ZM2.6391 7.41262C2.61394 7.36544 2.59041 7.31708 2.56601 7.26936C2.68454 7.24063 2.80046 7.20614 2.9024 7.15051C2.92192 7.20527 2.94437 7.25885 2.9641 7.31339C2.85132 7.29669 2.72737 7.33465 2.6391 7.41262ZM4.45085 11.0531C4.42872 11.0222 4.40877 10.99 4.38632 10.9591C4.38264 10.954 4.37754 10.9524 4.37364 10.9476C4.3179 10.7205 4.25728 10.4953 4.1895 10.2728C4.19059 10.2709 4.19156 10.2691 4.19265 10.2673C4.30391 10.507 4.41582 10.7463 4.5312 10.9843C4.50127 11.0027 4.4759 11.028 4.45085 11.0531ZM9.2736 19.6906C9.33097 19.6093 9.34495 19.5014 9.3224 19.4018C9.39343 19.3509 9.46088 19.295 9.52681 19.2371C9.51456 19.2879 9.49938 19.3375 9.48734 19.3884C9.45817 19.5124 9.49146 19.6099 9.55208 19.6812C9.45925 19.6826 9.36643 19.6864 9.2736 19.6906ZM11.5944 15.1212C11.5174 15.3165 11.4289 15.5228 11.3351 15.7359C11.3408 15.6906 11.3464 15.645 11.3511 15.5991C11.4654 15.2967 11.5888 14.9965 11.7122 14.6965C11.7384 14.6775 11.7657 14.6598 11.7914 14.6406C11.7254 14.8008 11.6579 14.9601 11.5944 15.1212ZM13.7602 10.6135C13.3762 11.2934 13.0105 11.9828 12.6691 12.6836C12.5624 12.8371 12.4505 12.9856 12.333 13.1286C12.7998 12.2309 13.3104 11.3562 13.8157 10.4794C13.7975 10.5243 13.7787 10.5688 13.7602 10.6135ZM16.4171 2.55798C16.4439 2.51124 16.4707 2.4645 16.4999 2.41831C16.6205 2.26768 16.7376 2.1099 16.8499 1.93823C16.8624 1.93813 16.8746 1.93682 16.8871 1.93693C16.96 1.95699 17.0328 1.97716 17.1057 1.99994C17.0324 2.00709 16.9579 2.03301 16.8902 2.10036C16.7316 2.2576 16.5748 2.40909 16.4171 2.55798Z"
+                                            fill="#990000" />
+                                    </svg>
+                                    <p class="price-list__item--text">Личный менеджер 24/7</p>
+
+                                </li>
+                                <li class="price-list__item d-flex align-items-center">
+                                    <svg class="price-svg me-2" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.9442 16.4896C19.9787 16.3162 19.9482 16.1263 19.8122 15.9565C18.2636 14.0244 16.5979 12.1553 14.8425 10.3639C15.4733 9.67226 16.0979 8.97485 16.7094 8.26949C17.7334 7.08841 19.2914 5.5497 19.4954 3.94858C19.505 3.87358 19.491 3.80923 19.4682 3.75024C19.4734 3.7334 19.483 3.72007 19.4864 3.70189C19.5144 3.55324 19.5002 3.43898 19.4713 3.28981C19.5122 3.5021 19.4324 3.06296 19.4007 3.00883C19.3485 2.91957 19.2617 2.83414 19.1963 2.7516C18.9343 2.42133 18.6496 2.10843 18.3583 1.80399C17.9797 1.40802 17.1667 0.494813 16.5176 0.724355C16.3288 0.489648 15.9855 0.392336 15.7277 0.683654C14.0252 2.60811 12.097 4.29145 10.137 5.94081C8.28158 4.33866 6.35682 2.82763 4.37854 1.43127C4.268 1.35327 4.1521 1.39263 4.07731 1.47455C3.977 1.46753 3.8739 1.48953 3.77814 1.5541C3.2894 1.88384 2.87123 2.34396 2.44221 2.74705C1.92114 3.23661 1.38737 3.71336 0.859586 4.19579C0.789959 4.25953 0.750496 4.33401 0.733864 4.41149C0.490686 4.47492 0.364758 4.82016 0.640787 4.9932C2.61255 6.22933 4.26677 7.88086 5.79711 9.64901C5.59133 9.83393 5.38245 10.0155 5.17946 10.2034C3.79146 11.4884 2.4232 12.8262 1.27094 14.3313C0.762376 14.9956 -0.396387 16.428 0.137386 17.3407C0.245545 17.5258 0.531698 17.5324 0.638308 17.3407C0.651944 17.3163 0.667543 17.2932 0.681282 17.2688C0.918056 17.747 1.30886 18.188 1.64769 18.5343C2.11205 19.0086 2.87319 19.7787 3.60675 19.7141C3.64673 19.9038 3.91625 19.9794 4.05592 19.8371C5.34464 18.5232 6.50826 17.356 8.04377 16.2878C8.71701 15.8194 9.40574 15.3562 10.0789 14.8721C11.0471 16.0296 12.0479 17.1596 13.1503 18.192C14.1084 19.0893 15.5128 20.4629 16.8863 20.5032C17.0524 20.508 17.1768 20.4355 17.2538 20.3279C18.0662 19.9783 18.8103 19.3623 19.385 18.6986C19.8253 18.1897 20.5366 17.1009 19.9442 16.4896ZM4.43081 6.76373C4.5492 6.82726 4.66883 6.88914 4.79031 6.94823C4.80787 6.96403 4.82554 6.97953 4.8431 6.99534C4.85767 7.03542 4.87172 7.0756 4.89888 7.1129C4.95043 7.18356 5.00477 7.25174 5.05694 7.32188C4.85116 7.1318 4.64259 6.94565 4.43081 6.76373ZM2.82867 17.8415C2.77247 17.8782 2.7266 17.9225 2.68941 17.9711C2.65904 17.944 2.62908 17.9168 2.59913 17.8894C2.7203 17.8097 2.83869 17.7269 2.95759 17.6449C2.9922 17.6555 3.02753 17.6625 3.06327 17.6671C3.06699 17.673 3.07123 17.6782 3.07515 17.6838C2.99344 17.7367 2.91017 17.788 2.82867 17.8415ZM12.0206 11.5864C11.9533 11.5361 11.8859 11.4857 11.8192 11.4345C11.6068 11.2001 11.3938 10.9667 11.1798 10.7341C11.4632 11.0152 11.7501 11.2925 12.0428 11.5634C12.0353 11.571 12.0281 11.5788 12.0206 11.5864Z"
+                                            fill="#1A1A1A" />
+                                    </svg>
+
+                                    <p class="price-list__item--text">Настройка Facebook, Instagram</p>
+
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="price__card me-md-3 me-auto mx-md-0 mx-auto mb-3">
+                            <h4 class="price-title-card">Пакет Расширенный</h4>
+                            <h3 class="price-title-money color-white bg-red mb-4">30 000 руб</h3>
+                            <ul class="price-list">
+                                <li class="price-list__item d-flex align-items-center mb-3">
+                                    <svg class="price-svg me-2" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.5259 2.10231C20.5185 2.06695 20.5041 2.03117 20.48 1.99582C19.4205 0.438478 16.7637 0.522629 15.1113 0.503434C14.9452 0.501482 14.8642 0.673363 14.9002 0.805229C14.7528 0.845353 14.6137 0.899249 14.4942 0.982207C12.7956 2.16141 11.986 4.63736 11.1839 6.44249C10.416 8.17074 9.54785 9.84693 8.80101 11.5851C8.4836 12.3239 7.6346 13.8154 7.50111 14.9495C6.02304 12.2423 4.65136 9.49146 3.33075 6.70091C3.26123 6.55397 3.10248 6.53597 2.97679 6.59247C2.64908 6.4015 2.22507 6.55039 1.87784 6.6379C1.4046 6.7573 0.910857 6.89784 0.468955 7.10854C0.397058 7.14281 0.356284 7.19161 0.330474 7.24431C0.17139 7.17632 -0.0466877 7.31242 0.00883473 7.5165C1.19855 11.8924 4.49628 15.5767 6.19069 19.7814C6.25218 19.9341 6.3796 20.007 6.51168 20.024C6.54313 20.0882 6.59714 20.1402 6.68053 20.1589C7.30396 20.299 7.92794 20.3733 8.5646 20.4243C9.12124 20.4688 9.77102 20.5817 10.3105 20.4163C10.4966 20.3592 10.5719 20.1847 10.5439 20.0276C10.5878 20.0194 10.6342 19.9935 10.6826 19.9402C10.7385 19.8789 10.6818 19.8002 10.6074 19.811C11.0522 19.7469 11.4589 17.7873 11.5835 17.447C11.9823 16.3585 12.4202 15.2839 12.858 14.2105C13.1114 13.5897 13.3955 12.9753 13.7003 12.3667C13.8194 12.1543 13.9298 11.9352 14.0369 11.7134C15.7747 8.44813 18.1574 5.38475 20.5104 2.6636C20.6701 2.47914 20.6401 2.25673 20.5259 2.10231ZM2.6391 7.41262C2.61394 7.36544 2.59041 7.31708 2.56601 7.26936C2.68454 7.24063 2.80046 7.20614 2.9024 7.15051C2.92192 7.20527 2.94437 7.25885 2.9641 7.31339C2.85132 7.29669 2.72737 7.33465 2.6391 7.41262ZM4.45085 11.0531C4.42872 11.0222 4.40877 10.99 4.38632 10.9591C4.38264 10.954 4.37754 10.9524 4.37364 10.9476C4.3179 10.7205 4.25728 10.4953 4.1895 10.2728C4.19059 10.2709 4.19156 10.2691 4.19265 10.2673C4.30391 10.507 4.41582 10.7463 4.5312 10.9843C4.50127 11.0027 4.4759 11.028 4.45085 11.0531ZM9.2736 19.6906C9.33097 19.6093 9.34495 19.5014 9.3224 19.4018C9.39343 19.3509 9.46088 19.295 9.52681 19.2371C9.51456 19.2879 9.49938 19.3375 9.48734 19.3884C9.45817 19.5124 9.49146 19.6099 9.55208 19.6812C9.45925 19.6826 9.36643 19.6864 9.2736 19.6906ZM11.5944 15.1212C11.5174 15.3165 11.4289 15.5228 11.3351 15.7359C11.3408 15.6906 11.3464 15.645 11.3511 15.5991C11.4654 15.2967 11.5888 14.9965 11.7122 14.6965C11.7384 14.6775 11.7657 14.6598 11.7914 14.6406C11.7254 14.8008 11.6579 14.9601 11.5944 15.1212ZM13.7602 10.6135C13.3762 11.2934 13.0105 11.9828 12.6691 12.6836C12.5624 12.8371 12.4505 12.9856 12.333 13.1286C12.7998 12.2309 13.3104 11.3562 13.8157 10.4794C13.7975 10.5243 13.7787 10.5688 13.7602 10.6135ZM16.4171 2.55798C16.4439 2.51124 16.4707 2.4645 16.4999 2.41831C16.6205 2.26768 16.7376 2.1099 16.8499 1.93823C16.8624 1.93813 16.8746 1.93682 16.8871 1.93693C16.96 1.95699 17.0328 1.97716 17.1057 1.99994C17.0324 2.00709 16.9579 2.03301 16.8902 2.10036C16.7316 2.2576 16.5748 2.40909 16.4171 2.55798Z"
+                                            fill="#990000" />
+                                    </svg>
+                                    <p class="price-list__item--text">Сайт</p>
+
+                                </li>
+                                <li class="price-list__item d-flex align-items-center mb-3">
+                                    <svg class="price-svg me-2" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.5259 2.10231C20.5185 2.06695 20.5041 2.03117 20.48 1.99582C19.4205 0.438478 16.7637 0.522629 15.1113 0.503434C14.9452 0.501482 14.8642 0.673363 14.9002 0.805229C14.7528 0.845353 14.6137 0.899249 14.4942 0.982207C12.7956 2.16141 11.986 4.63736 11.1839 6.44249C10.416 8.17074 9.54785 9.84693 8.80101 11.5851C8.4836 12.3239 7.6346 13.8154 7.50111 14.9495C6.02304 12.2423 4.65136 9.49146 3.33075 6.70091C3.26123 6.55397 3.10248 6.53597 2.97679 6.59247C2.64908 6.4015 2.22507 6.55039 1.87784 6.6379C1.4046 6.7573 0.910857 6.89784 0.468955 7.10854C0.397058 7.14281 0.356284 7.19161 0.330474 7.24431C0.17139 7.17632 -0.0466877 7.31242 0.00883473 7.5165C1.19855 11.8924 4.49628 15.5767 6.19069 19.7814C6.25218 19.9341 6.3796 20.007 6.51168 20.024C6.54313 20.0882 6.59714 20.1402 6.68053 20.1589C7.30396 20.299 7.92794 20.3733 8.5646 20.4243C9.12124 20.4688 9.77102 20.5817 10.3105 20.4163C10.4966 20.3592 10.5719 20.1847 10.5439 20.0276C10.5878 20.0194 10.6342 19.9935 10.6826 19.9402C10.7385 19.8789 10.6818 19.8002 10.6074 19.811C11.0522 19.7469 11.4589 17.7873 11.5835 17.447C11.9823 16.3585 12.4202 15.2839 12.858 14.2105C13.1114 13.5897 13.3955 12.9753 13.7003 12.3667C13.8194 12.1543 13.9298 11.9352 14.0369 11.7134C15.7747 8.44813 18.1574 5.38475 20.5104 2.6636C20.6701 2.47914 20.6401 2.25673 20.5259 2.10231ZM2.6391 7.41262C2.61394 7.36544 2.59041 7.31708 2.56601 7.26936C2.68454 7.24063 2.80046 7.20614 2.9024 7.15051C2.92192 7.20527 2.94437 7.25885 2.9641 7.31339C2.85132 7.29669 2.72737 7.33465 2.6391 7.41262ZM4.45085 11.0531C4.42872 11.0222 4.40877 10.99 4.38632 10.9591C4.38264 10.954 4.37754 10.9524 4.37364 10.9476C4.3179 10.7205 4.25728 10.4953 4.1895 10.2728C4.19059 10.2709 4.19156 10.2691 4.19265 10.2673C4.30391 10.507 4.41582 10.7463 4.5312 10.9843C4.50127 11.0027 4.4759 11.028 4.45085 11.0531ZM9.2736 19.6906C9.33097 19.6093 9.34495 19.5014 9.3224 19.4018C9.39343 19.3509 9.46088 19.295 9.52681 19.2371C9.51456 19.2879 9.49938 19.3375 9.48734 19.3884C9.45817 19.5124 9.49146 19.6099 9.55208 19.6812C9.45925 19.6826 9.36643 19.6864 9.2736 19.6906ZM11.5944 15.1212C11.5174 15.3165 11.4289 15.5228 11.3351 15.7359C11.3408 15.6906 11.3464 15.645 11.3511 15.5991C11.4654 15.2967 11.5888 14.9965 11.7122 14.6965C11.7384 14.6775 11.7657 14.6598 11.7914 14.6406C11.7254 14.8008 11.6579 14.9601 11.5944 15.1212ZM13.7602 10.6135C13.3762 11.2934 13.0105 11.9828 12.6691 12.6836C12.5624 12.8371 12.4505 12.9856 12.333 13.1286C12.7998 12.2309 13.3104 11.3562 13.8157 10.4794C13.7975 10.5243 13.7787 10.5688 13.7602 10.6135ZM16.4171 2.55798C16.4439 2.51124 16.4707 2.4645 16.4999 2.41831C16.6205 2.26768 16.7376 2.1099 16.8499 1.93823C16.8624 1.93813 16.8746 1.93682 16.8871 1.93693C16.96 1.95699 17.0328 1.97716 17.1057 1.99994C17.0324 2.00709 16.9579 2.03301 16.8902 2.10036C16.7316 2.2576 16.5748 2.40909 16.4171 2.55798Z"
+                                            fill="#990000" />
+                                    </svg>
+                                    <p class="price-list__item--text">Настройка Яндекс + Google</p>
+
+                                </li>
+                                <li class="price-list__item d-flex align-items-center mb-3">
+                                    <svg class="price-svg me-2" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.5259 2.10231C20.5185 2.06695 20.5041 2.03117 20.48 1.99582C19.4205 0.438478 16.7637 0.522629 15.1113 0.503434C14.9452 0.501482 14.8642 0.673363 14.9002 0.805229C14.7528 0.845353 14.6137 0.899249 14.4942 0.982207C12.7956 2.16141 11.986 4.63736 11.1839 6.44249C10.416 8.17074 9.54785 9.84693 8.80101 11.5851C8.4836 12.3239 7.6346 13.8154 7.50111 14.9495C6.02304 12.2423 4.65136 9.49146 3.33075 6.70091C3.26123 6.55397 3.10248 6.53597 2.97679 6.59247C2.64908 6.4015 2.22507 6.55039 1.87784 6.6379C1.4046 6.7573 0.910857 6.89784 0.468955 7.10854C0.397058 7.14281 0.356284 7.19161 0.330474 7.24431C0.17139 7.17632 -0.0466877 7.31242 0.00883473 7.5165C1.19855 11.8924 4.49628 15.5767 6.19069 19.7814C6.25218 19.9341 6.3796 20.007 6.51168 20.024C6.54313 20.0882 6.59714 20.1402 6.68053 20.1589C7.30396 20.299 7.92794 20.3733 8.5646 20.4243C9.12124 20.4688 9.77102 20.5817 10.3105 20.4163C10.4966 20.3592 10.5719 20.1847 10.5439 20.0276C10.5878 20.0194 10.6342 19.9935 10.6826 19.9402C10.7385 19.8789 10.6818 19.8002 10.6074 19.811C11.0522 19.7469 11.4589 17.7873 11.5835 17.447C11.9823 16.3585 12.4202 15.2839 12.858 14.2105C13.1114 13.5897 13.3955 12.9753 13.7003 12.3667C13.8194 12.1543 13.9298 11.9352 14.0369 11.7134C15.7747 8.44813 18.1574 5.38475 20.5104 2.6636C20.6701 2.47914 20.6401 2.25673 20.5259 2.10231ZM2.6391 7.41262C2.61394 7.36544 2.59041 7.31708 2.56601 7.26936C2.68454 7.24063 2.80046 7.20614 2.9024 7.15051C2.92192 7.20527 2.94437 7.25885 2.9641 7.31339C2.85132 7.29669 2.72737 7.33465 2.6391 7.41262ZM4.45085 11.0531C4.42872 11.0222 4.40877 10.99 4.38632 10.9591C4.38264 10.954 4.37754 10.9524 4.37364 10.9476C4.3179 10.7205 4.25728 10.4953 4.1895 10.2728C4.19059 10.2709 4.19156 10.2691 4.19265 10.2673C4.30391 10.507 4.41582 10.7463 4.5312 10.9843C4.50127 11.0027 4.4759 11.028 4.45085 11.0531ZM9.2736 19.6906C9.33097 19.6093 9.34495 19.5014 9.3224 19.4018C9.39343 19.3509 9.46088 19.295 9.52681 19.2371C9.51456 19.2879 9.49938 19.3375 9.48734 19.3884C9.45817 19.5124 9.49146 19.6099 9.55208 19.6812C9.45925 19.6826 9.36643 19.6864 9.2736 19.6906ZM11.5944 15.1212C11.5174 15.3165 11.4289 15.5228 11.3351 15.7359C11.3408 15.6906 11.3464 15.645 11.3511 15.5991C11.4654 15.2967 11.5888 14.9965 11.7122 14.6965C11.7384 14.6775 11.7657 14.6598 11.7914 14.6406C11.7254 14.8008 11.6579 14.9601 11.5944 15.1212ZM13.7602 10.6135C13.3762 11.2934 13.0105 11.9828 12.6691 12.6836C12.5624 12.8371 12.4505 12.9856 12.333 13.1286C12.7998 12.2309 13.3104 11.3562 13.8157 10.4794C13.7975 10.5243 13.7787 10.5688 13.7602 10.6135ZM16.4171 2.55798C16.4439 2.51124 16.4707 2.4645 16.4999 2.41831C16.6205 2.26768 16.7376 2.1099 16.8499 1.93823C16.8624 1.93813 16.8746 1.93682 16.8871 1.93693C16.96 1.95699 17.0328 1.97716 17.1057 1.99994C17.0324 2.00709 16.9579 2.03301 16.8902 2.10036C16.7316 2.2576 16.5748 2.40909 16.4171 2.55798Z"
+                                            fill="#990000" />
+                                    </svg>
+                                    <p class="price-list__item--text">CRM система</p>
+
+                                </li>
+                                <li class="price-list__item d-flex align-items-center mb-3">
+                                    <svg class="price-svg me-2" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.5259 2.10231C20.5185 2.06695 20.5041 2.03117 20.48 1.99582C19.4205 0.438478 16.7637 0.522629 15.1113 0.503434C14.9452 0.501482 14.8642 0.673363 14.9002 0.805229C14.7528 0.845353 14.6137 0.899249 14.4942 0.982207C12.7956 2.16141 11.986 4.63736 11.1839 6.44249C10.416 8.17074 9.54785 9.84693 8.80101 11.5851C8.4836 12.3239 7.6346 13.8154 7.50111 14.9495C6.02304 12.2423 4.65136 9.49146 3.33075 6.70091C3.26123 6.55397 3.10248 6.53597 2.97679 6.59247C2.64908 6.4015 2.22507 6.55039 1.87784 6.6379C1.4046 6.7573 0.910857 6.89784 0.468955 7.10854C0.397058 7.14281 0.356284 7.19161 0.330474 7.24431C0.17139 7.17632 -0.0466877 7.31242 0.00883473 7.5165C1.19855 11.8924 4.49628 15.5767 6.19069 19.7814C6.25218 19.9341 6.3796 20.007 6.51168 20.024C6.54313 20.0882 6.59714 20.1402 6.68053 20.1589C7.30396 20.299 7.92794 20.3733 8.5646 20.4243C9.12124 20.4688 9.77102 20.5817 10.3105 20.4163C10.4966 20.3592 10.5719 20.1847 10.5439 20.0276C10.5878 20.0194 10.6342 19.9935 10.6826 19.9402C10.7385 19.8789 10.6818 19.8002 10.6074 19.811C11.0522 19.7469 11.4589 17.7873 11.5835 17.447C11.9823 16.3585 12.4202 15.2839 12.858 14.2105C13.1114 13.5897 13.3955 12.9753 13.7003 12.3667C13.8194 12.1543 13.9298 11.9352 14.0369 11.7134C15.7747 8.44813 18.1574 5.38475 20.5104 2.6636C20.6701 2.47914 20.6401 2.25673 20.5259 2.10231ZM2.6391 7.41262C2.61394 7.36544 2.59041 7.31708 2.56601 7.26936C2.68454 7.24063 2.80046 7.20614 2.9024 7.15051C2.92192 7.20527 2.94437 7.25885 2.9641 7.31339C2.85132 7.29669 2.72737 7.33465 2.6391 7.41262ZM4.45085 11.0531C4.42872 11.0222 4.40877 10.99 4.38632 10.9591C4.38264 10.954 4.37754 10.9524 4.37364 10.9476C4.3179 10.7205 4.25728 10.4953 4.1895 10.2728C4.19059 10.2709 4.19156 10.2691 4.19265 10.2673C4.30391 10.507 4.41582 10.7463 4.5312 10.9843C4.50127 11.0027 4.4759 11.028 4.45085 11.0531ZM9.2736 19.6906C9.33097 19.6093 9.34495 19.5014 9.3224 19.4018C9.39343 19.3509 9.46088 19.295 9.52681 19.2371C9.51456 19.2879 9.49938 19.3375 9.48734 19.3884C9.45817 19.5124 9.49146 19.6099 9.55208 19.6812C9.45925 19.6826 9.36643 19.6864 9.2736 19.6906ZM11.5944 15.1212C11.5174 15.3165 11.4289 15.5228 11.3351 15.7359C11.3408 15.6906 11.3464 15.645 11.3511 15.5991C11.4654 15.2967 11.5888 14.9965 11.7122 14.6965C11.7384 14.6775 11.7657 14.6598 11.7914 14.6406C11.7254 14.8008 11.6579 14.9601 11.5944 15.1212ZM13.7602 10.6135C13.3762 11.2934 13.0105 11.9828 12.6691 12.6836C12.5624 12.8371 12.4505 12.9856 12.333 13.1286C12.7998 12.2309 13.3104 11.3562 13.8157 10.4794C13.7975 10.5243 13.7787 10.5688 13.7602 10.6135ZM16.4171 2.55798C16.4439 2.51124 16.4707 2.4645 16.4999 2.41831C16.6205 2.26768 16.7376 2.1099 16.8499 1.93823C16.8624 1.93813 16.8746 1.93682 16.8871 1.93693C16.96 1.95699 17.0328 1.97716 17.1057 1.99994C17.0324 2.00709 16.9579 2.03301 16.8902 2.10036C16.7316 2.2576 16.5748 2.40909 16.4171 2.55798Z"
+                                            fill="#990000" />
+                                    </svg>
+                                    <p class="price-list__item--text">Личный менеджер 24/7</p>
+
+                                </li>
+                                <li class="price-list__item d-flex align-items-center">
+                                    <svg class="price-svg me-2" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.9442 16.4896C19.9787 16.3162 19.9482 16.1263 19.8122 15.9565C18.2636 14.0244 16.5979 12.1553 14.8425 10.3639C15.4733 9.67226 16.0979 8.97485 16.7094 8.26949C17.7334 7.08841 19.2914 5.5497 19.4954 3.94858C19.505 3.87358 19.491 3.80923 19.4682 3.75024C19.4734 3.7334 19.483 3.72007 19.4864 3.70189C19.5144 3.55324 19.5002 3.43898 19.4713 3.28981C19.5122 3.5021 19.4324 3.06296 19.4007 3.00883C19.3485 2.91957 19.2617 2.83414 19.1963 2.7516C18.9343 2.42133 18.6496 2.10843 18.3583 1.80399C17.9797 1.40802 17.1667 0.494813 16.5176 0.724355C16.3288 0.489648 15.9855 0.392336 15.7277 0.683654C14.0252 2.60811 12.097 4.29145 10.137 5.94081C8.28158 4.33866 6.35682 2.82763 4.37854 1.43127C4.268 1.35327 4.1521 1.39263 4.07731 1.47455C3.977 1.46753 3.8739 1.48953 3.77814 1.5541C3.2894 1.88384 2.87123 2.34396 2.44221 2.74705C1.92114 3.23661 1.38737 3.71336 0.859586 4.19579C0.789959 4.25953 0.750496 4.33401 0.733864 4.41149C0.490686 4.47492 0.364758 4.82016 0.640787 4.9932C2.61255 6.22933 4.26677 7.88086 5.79711 9.64901C5.59133 9.83393 5.38245 10.0155 5.17946 10.2034C3.79146 11.4884 2.4232 12.8262 1.27094 14.3313C0.762376 14.9956 -0.396387 16.428 0.137386 17.3407C0.245545 17.5258 0.531698 17.5324 0.638308 17.3407C0.651944 17.3163 0.667543 17.2932 0.681282 17.2688C0.918056 17.747 1.30886 18.188 1.64769 18.5343C2.11205 19.0086 2.87319 19.7787 3.60675 19.7141C3.64673 19.9038 3.91625 19.9794 4.05592 19.8371C5.34464 18.5232 6.50826 17.356 8.04377 16.2878C8.71701 15.8194 9.40574 15.3562 10.0789 14.8721C11.0471 16.0296 12.0479 17.1596 13.1503 18.192C14.1084 19.0893 15.5128 20.4629 16.8863 20.5032C17.0524 20.508 17.1768 20.4355 17.2538 20.3279C18.0662 19.9783 18.8103 19.3623 19.385 18.6986C19.8253 18.1897 20.5366 17.1009 19.9442 16.4896ZM4.43081 6.76373C4.5492 6.82726 4.66883 6.88914 4.79031 6.94823C4.80787 6.96403 4.82554 6.97953 4.8431 6.99534C4.85767 7.03542 4.87172 7.0756 4.89888 7.1129C4.95043 7.18356 5.00477 7.25174 5.05694 7.32188C4.85116 7.1318 4.64259 6.94565 4.43081 6.76373ZM2.82867 17.8415C2.77247 17.8782 2.7266 17.9225 2.68941 17.9711C2.65904 17.944 2.62908 17.9168 2.59913 17.8894C2.7203 17.8097 2.83869 17.7269 2.95759 17.6449C2.9922 17.6555 3.02753 17.6625 3.06327 17.6671C3.06699 17.673 3.07123 17.6782 3.07515 17.6838C2.99344 17.7367 2.91017 17.788 2.82867 17.8415ZM12.0206 11.5864C11.9533 11.5361 11.8859 11.4857 11.8192 11.4345C11.6068 11.2001 11.3938 10.9667 11.1798 10.7341C11.4632 11.0152 11.7501 11.2925 12.0428 11.5634C12.0353 11.571 12.0281 11.5788 12.0206 11.5864Z"
+                                            fill="#1A1A1A" />
+                                    </svg>
+
+                                    <p class="price-list__item--text">Настройка Facebook, Instagram</p>
+
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="price__card me-md-3 me-auto mx-md-0 mx-auto mb-3">
+                            <h4 class="price-title-card color-red">Пакет PRO</h4>
+                            <h3 class="price-title-money color-white bg-red mb-4">50 000 руб</h3>
+                            <ul class="price-list">
+                                <li class="price-list__item d-flex align-items-center mb-3">
+                                    <svg class="price-svg me-2" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.5259 2.10231C20.5185 2.06695 20.5041 2.03117 20.48 1.99582C19.4205 0.438478 16.7637 0.522629 15.1113 0.503434C14.9452 0.501482 14.8642 0.673363 14.9002 0.805229C14.7528 0.845353 14.6137 0.899249 14.4942 0.982207C12.7956 2.16141 11.986 4.63736 11.1839 6.44249C10.416 8.17074 9.54785 9.84693 8.80101 11.5851C8.4836 12.3239 7.6346 13.8154 7.50111 14.9495C6.02304 12.2423 4.65136 9.49146 3.33075 6.70091C3.26123 6.55397 3.10248 6.53597 2.97679 6.59247C2.64908 6.4015 2.22507 6.55039 1.87784 6.6379C1.4046 6.7573 0.910857 6.89784 0.468955 7.10854C0.397058 7.14281 0.356284 7.19161 0.330474 7.24431C0.17139 7.17632 -0.0466877 7.31242 0.00883473 7.5165C1.19855 11.8924 4.49628 15.5767 6.19069 19.7814C6.25218 19.9341 6.3796 20.007 6.51168 20.024C6.54313 20.0882 6.59714 20.1402 6.68053 20.1589C7.30396 20.299 7.92794 20.3733 8.5646 20.4243C9.12124 20.4688 9.77102 20.5817 10.3105 20.4163C10.4966 20.3592 10.5719 20.1847 10.5439 20.0276C10.5878 20.0194 10.6342 19.9935 10.6826 19.9402C10.7385 19.8789 10.6818 19.8002 10.6074 19.811C11.0522 19.7469 11.4589 17.7873 11.5835 17.447C11.9823 16.3585 12.4202 15.2839 12.858 14.2105C13.1114 13.5897 13.3955 12.9753 13.7003 12.3667C13.8194 12.1543 13.9298 11.9352 14.0369 11.7134C15.7747 8.44813 18.1574 5.38475 20.5104 2.6636C20.6701 2.47914 20.6401 2.25673 20.5259 2.10231ZM2.6391 7.41262C2.61394 7.36544 2.59041 7.31708 2.56601 7.26936C2.68454 7.24063 2.80046 7.20614 2.9024 7.15051C2.92192 7.20527 2.94437 7.25885 2.9641 7.31339C2.85132 7.29669 2.72737 7.33465 2.6391 7.41262ZM4.45085 11.0531C4.42872 11.0222 4.40877 10.99 4.38632 10.9591C4.38264 10.954 4.37754 10.9524 4.37364 10.9476C4.3179 10.7205 4.25728 10.4953 4.1895 10.2728C4.19059 10.2709 4.19156 10.2691 4.19265 10.2673C4.30391 10.507 4.41582 10.7463 4.5312 10.9843C4.50127 11.0027 4.4759 11.028 4.45085 11.0531ZM9.2736 19.6906C9.33097 19.6093 9.34495 19.5014 9.3224 19.4018C9.39343 19.3509 9.46088 19.295 9.52681 19.2371C9.51456 19.2879 9.49938 19.3375 9.48734 19.3884C9.45817 19.5124 9.49146 19.6099 9.55208 19.6812C9.45925 19.6826 9.36643 19.6864 9.2736 19.6906ZM11.5944 15.1212C11.5174 15.3165 11.4289 15.5228 11.3351 15.7359C11.3408 15.6906 11.3464 15.645 11.3511 15.5991C11.4654 15.2967 11.5888 14.9965 11.7122 14.6965C11.7384 14.6775 11.7657 14.6598 11.7914 14.6406C11.7254 14.8008 11.6579 14.9601 11.5944 15.1212ZM13.7602 10.6135C13.3762 11.2934 13.0105 11.9828 12.6691 12.6836C12.5624 12.8371 12.4505 12.9856 12.333 13.1286C12.7998 12.2309 13.3104 11.3562 13.8157 10.4794C13.7975 10.5243 13.7787 10.5688 13.7602 10.6135ZM16.4171 2.55798C16.4439 2.51124 16.4707 2.4645 16.4999 2.41831C16.6205 2.26768 16.7376 2.1099 16.8499 1.93823C16.8624 1.93813 16.8746 1.93682 16.8871 1.93693C16.96 1.95699 17.0328 1.97716 17.1057 1.99994C17.0324 2.00709 16.9579 2.03301 16.8902 2.10036C16.7316 2.2576 16.5748 2.40909 16.4171 2.55798Z"
+                                            fill="#990000" />
+                                    </svg>
+                                    <p class="price-list__item--text">Сайт</p>
+
+                                </li>
+                                <li class="price-list__item d-flex align-items-center mb-3">
+                                    <svg class="price-svg me-2" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.5259 2.10231C20.5185 2.06695 20.5041 2.03117 20.48 1.99582C19.4205 0.438478 16.7637 0.522629 15.1113 0.503434C14.9452 0.501482 14.8642 0.673363 14.9002 0.805229C14.7528 0.845353 14.6137 0.899249 14.4942 0.982207C12.7956 2.16141 11.986 4.63736 11.1839 6.44249C10.416 8.17074 9.54785 9.84693 8.80101 11.5851C8.4836 12.3239 7.6346 13.8154 7.50111 14.9495C6.02304 12.2423 4.65136 9.49146 3.33075 6.70091C3.26123 6.55397 3.10248 6.53597 2.97679 6.59247C2.64908 6.4015 2.22507 6.55039 1.87784 6.6379C1.4046 6.7573 0.910857 6.89784 0.468955 7.10854C0.397058 7.14281 0.356284 7.19161 0.330474 7.24431C0.17139 7.17632 -0.0466877 7.31242 0.00883473 7.5165C1.19855 11.8924 4.49628 15.5767 6.19069 19.7814C6.25218 19.9341 6.3796 20.007 6.51168 20.024C6.54313 20.0882 6.59714 20.1402 6.68053 20.1589C7.30396 20.299 7.92794 20.3733 8.5646 20.4243C9.12124 20.4688 9.77102 20.5817 10.3105 20.4163C10.4966 20.3592 10.5719 20.1847 10.5439 20.0276C10.5878 20.0194 10.6342 19.9935 10.6826 19.9402C10.7385 19.8789 10.6818 19.8002 10.6074 19.811C11.0522 19.7469 11.4589 17.7873 11.5835 17.447C11.9823 16.3585 12.4202 15.2839 12.858 14.2105C13.1114 13.5897 13.3955 12.9753 13.7003 12.3667C13.8194 12.1543 13.9298 11.9352 14.0369 11.7134C15.7747 8.44813 18.1574 5.38475 20.5104 2.6636C20.6701 2.47914 20.6401 2.25673 20.5259 2.10231ZM2.6391 7.41262C2.61394 7.36544 2.59041 7.31708 2.56601 7.26936C2.68454 7.24063 2.80046 7.20614 2.9024 7.15051C2.92192 7.20527 2.94437 7.25885 2.9641 7.31339C2.85132 7.29669 2.72737 7.33465 2.6391 7.41262ZM4.45085 11.0531C4.42872 11.0222 4.40877 10.99 4.38632 10.9591C4.38264 10.954 4.37754 10.9524 4.37364 10.9476C4.3179 10.7205 4.25728 10.4953 4.1895 10.2728C4.19059 10.2709 4.19156 10.2691 4.19265 10.2673C4.30391 10.507 4.41582 10.7463 4.5312 10.9843C4.50127 11.0027 4.4759 11.028 4.45085 11.0531ZM9.2736 19.6906C9.33097 19.6093 9.34495 19.5014 9.3224 19.4018C9.39343 19.3509 9.46088 19.295 9.52681 19.2371C9.51456 19.2879 9.49938 19.3375 9.48734 19.3884C9.45817 19.5124 9.49146 19.6099 9.55208 19.6812C9.45925 19.6826 9.36643 19.6864 9.2736 19.6906ZM11.5944 15.1212C11.5174 15.3165 11.4289 15.5228 11.3351 15.7359C11.3408 15.6906 11.3464 15.645 11.3511 15.5991C11.4654 15.2967 11.5888 14.9965 11.7122 14.6965C11.7384 14.6775 11.7657 14.6598 11.7914 14.6406C11.7254 14.8008 11.6579 14.9601 11.5944 15.1212ZM13.7602 10.6135C13.3762 11.2934 13.0105 11.9828 12.6691 12.6836C12.5624 12.8371 12.4505 12.9856 12.333 13.1286C12.7998 12.2309 13.3104 11.3562 13.8157 10.4794C13.7975 10.5243 13.7787 10.5688 13.7602 10.6135ZM16.4171 2.55798C16.4439 2.51124 16.4707 2.4645 16.4999 2.41831C16.6205 2.26768 16.7376 2.1099 16.8499 1.93823C16.8624 1.93813 16.8746 1.93682 16.8871 1.93693C16.96 1.95699 17.0328 1.97716 17.1057 1.99994C17.0324 2.00709 16.9579 2.03301 16.8902 2.10036C16.7316 2.2576 16.5748 2.40909 16.4171 2.55798Z"
+                                            fill="#990000" />
+                                    </svg>
+                                    <p class="price-list__item--text">Настройка Яндекс + Google</p>
+
+                                </li>
+                                <li class="price-list__item d-flex align-items-center mb-3">
+                                    <svg class="price-svg me-2" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.5259 2.10231C20.5185 2.06695 20.5041 2.03117 20.48 1.99582C19.4205 0.438478 16.7637 0.522629 15.1113 0.503434C14.9452 0.501482 14.8642 0.673363 14.9002 0.805229C14.7528 0.845353 14.6137 0.899249 14.4942 0.982207C12.7956 2.16141 11.986 4.63736 11.1839 6.44249C10.416 8.17074 9.54785 9.84693 8.80101 11.5851C8.4836 12.3239 7.6346 13.8154 7.50111 14.9495C6.02304 12.2423 4.65136 9.49146 3.33075 6.70091C3.26123 6.55397 3.10248 6.53597 2.97679 6.59247C2.64908 6.4015 2.22507 6.55039 1.87784 6.6379C1.4046 6.7573 0.910857 6.89784 0.468955 7.10854C0.397058 7.14281 0.356284 7.19161 0.330474 7.24431C0.17139 7.17632 -0.0466877 7.31242 0.00883473 7.5165C1.19855 11.8924 4.49628 15.5767 6.19069 19.7814C6.25218 19.9341 6.3796 20.007 6.51168 20.024C6.54313 20.0882 6.59714 20.1402 6.68053 20.1589C7.30396 20.299 7.92794 20.3733 8.5646 20.4243C9.12124 20.4688 9.77102 20.5817 10.3105 20.4163C10.4966 20.3592 10.5719 20.1847 10.5439 20.0276C10.5878 20.0194 10.6342 19.9935 10.6826 19.9402C10.7385 19.8789 10.6818 19.8002 10.6074 19.811C11.0522 19.7469 11.4589 17.7873 11.5835 17.447C11.9823 16.3585 12.4202 15.2839 12.858 14.2105C13.1114 13.5897 13.3955 12.9753 13.7003 12.3667C13.8194 12.1543 13.9298 11.9352 14.0369 11.7134C15.7747 8.44813 18.1574 5.38475 20.5104 2.6636C20.6701 2.47914 20.6401 2.25673 20.5259 2.10231ZM2.6391 7.41262C2.61394 7.36544 2.59041 7.31708 2.56601 7.26936C2.68454 7.24063 2.80046 7.20614 2.9024 7.15051C2.92192 7.20527 2.94437 7.25885 2.9641 7.31339C2.85132 7.29669 2.72737 7.33465 2.6391 7.41262ZM4.45085 11.0531C4.42872 11.0222 4.40877 10.99 4.38632 10.9591C4.38264 10.954 4.37754 10.9524 4.37364 10.9476C4.3179 10.7205 4.25728 10.4953 4.1895 10.2728C4.19059 10.2709 4.19156 10.2691 4.19265 10.2673C4.30391 10.507 4.41582 10.7463 4.5312 10.9843C4.50127 11.0027 4.4759 11.028 4.45085 11.0531ZM9.2736 19.6906C9.33097 19.6093 9.34495 19.5014 9.3224 19.4018C9.39343 19.3509 9.46088 19.295 9.52681 19.2371C9.51456 19.2879 9.49938 19.3375 9.48734 19.3884C9.45817 19.5124 9.49146 19.6099 9.55208 19.6812C9.45925 19.6826 9.36643 19.6864 9.2736 19.6906ZM11.5944 15.1212C11.5174 15.3165 11.4289 15.5228 11.3351 15.7359C11.3408 15.6906 11.3464 15.645 11.3511 15.5991C11.4654 15.2967 11.5888 14.9965 11.7122 14.6965C11.7384 14.6775 11.7657 14.6598 11.7914 14.6406C11.7254 14.8008 11.6579 14.9601 11.5944 15.1212ZM13.7602 10.6135C13.3762 11.2934 13.0105 11.9828 12.6691 12.6836C12.5624 12.8371 12.4505 12.9856 12.333 13.1286C12.7998 12.2309 13.3104 11.3562 13.8157 10.4794C13.7975 10.5243 13.7787 10.5688 13.7602 10.6135ZM16.4171 2.55798C16.4439 2.51124 16.4707 2.4645 16.4999 2.41831C16.6205 2.26768 16.7376 2.1099 16.8499 1.93823C16.8624 1.93813 16.8746 1.93682 16.8871 1.93693C16.96 1.95699 17.0328 1.97716 17.1057 1.99994C17.0324 2.00709 16.9579 2.03301 16.8902 2.10036C16.7316 2.2576 16.5748 2.40909 16.4171 2.55798Z"
+                                            fill="#990000" />
+                                    </svg>
+                                    <p class="price-list__item--text">CRM система</p>
+
+                                </li>
+                                <li class="price-list__item d-flex align-items-center mb-3">
+                                    <svg class="price-svg me-2" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.5259 2.10231C20.5185 2.06695 20.5041 2.03117 20.48 1.99582C19.4205 0.438478 16.7637 0.522629 15.1113 0.503434C14.9452 0.501482 14.8642 0.673363 14.9002 0.805229C14.7528 0.845353 14.6137 0.899249 14.4942 0.982207C12.7956 2.16141 11.986 4.63736 11.1839 6.44249C10.416 8.17074 9.54785 9.84693 8.80101 11.5851C8.4836 12.3239 7.6346 13.8154 7.50111 14.9495C6.02304 12.2423 4.65136 9.49146 3.33075 6.70091C3.26123 6.55397 3.10248 6.53597 2.97679 6.59247C2.64908 6.4015 2.22507 6.55039 1.87784 6.6379C1.4046 6.7573 0.910857 6.89784 0.468955 7.10854C0.397058 7.14281 0.356284 7.19161 0.330474 7.24431C0.17139 7.17632 -0.0466877 7.31242 0.00883473 7.5165C1.19855 11.8924 4.49628 15.5767 6.19069 19.7814C6.25218 19.9341 6.3796 20.007 6.51168 20.024C6.54313 20.0882 6.59714 20.1402 6.68053 20.1589C7.30396 20.299 7.92794 20.3733 8.5646 20.4243C9.12124 20.4688 9.77102 20.5817 10.3105 20.4163C10.4966 20.3592 10.5719 20.1847 10.5439 20.0276C10.5878 20.0194 10.6342 19.9935 10.6826 19.9402C10.7385 19.8789 10.6818 19.8002 10.6074 19.811C11.0522 19.7469 11.4589 17.7873 11.5835 17.447C11.9823 16.3585 12.4202 15.2839 12.858 14.2105C13.1114 13.5897 13.3955 12.9753 13.7003 12.3667C13.8194 12.1543 13.9298 11.9352 14.0369 11.7134C15.7747 8.44813 18.1574 5.38475 20.5104 2.6636C20.6701 2.47914 20.6401 2.25673 20.5259 2.10231ZM2.6391 7.41262C2.61394 7.36544 2.59041 7.31708 2.56601 7.26936C2.68454 7.24063 2.80046 7.20614 2.9024 7.15051C2.92192 7.20527 2.94437 7.25885 2.9641 7.31339C2.85132 7.29669 2.72737 7.33465 2.6391 7.41262ZM4.45085 11.0531C4.42872 11.0222 4.40877 10.99 4.38632 10.9591C4.38264 10.954 4.37754 10.9524 4.37364 10.9476C4.3179 10.7205 4.25728 10.4953 4.1895 10.2728C4.19059 10.2709 4.19156 10.2691 4.19265 10.2673C4.30391 10.507 4.41582 10.7463 4.5312 10.9843C4.50127 11.0027 4.4759 11.028 4.45085 11.0531ZM9.2736 19.6906C9.33097 19.6093 9.34495 19.5014 9.3224 19.4018C9.39343 19.3509 9.46088 19.295 9.52681 19.2371C9.51456 19.2879 9.49938 19.3375 9.48734 19.3884C9.45817 19.5124 9.49146 19.6099 9.55208 19.6812C9.45925 19.6826 9.36643 19.6864 9.2736 19.6906ZM11.5944 15.1212C11.5174 15.3165 11.4289 15.5228 11.3351 15.7359C11.3408 15.6906 11.3464 15.645 11.3511 15.5991C11.4654 15.2967 11.5888 14.9965 11.7122 14.6965C11.7384 14.6775 11.7657 14.6598 11.7914 14.6406C11.7254 14.8008 11.6579 14.9601 11.5944 15.1212ZM13.7602 10.6135C13.3762 11.2934 13.0105 11.9828 12.6691 12.6836C12.5624 12.8371 12.4505 12.9856 12.333 13.1286C12.7998 12.2309 13.3104 11.3562 13.8157 10.4794C13.7975 10.5243 13.7787 10.5688 13.7602 10.6135ZM16.4171 2.55798C16.4439 2.51124 16.4707 2.4645 16.4999 2.41831C16.6205 2.26768 16.7376 2.1099 16.8499 1.93823C16.8624 1.93813 16.8746 1.93682 16.8871 1.93693C16.96 1.95699 17.0328 1.97716 17.1057 1.99994C17.0324 2.00709 16.9579 2.03301 16.8902 2.10036C16.7316 2.2576 16.5748 2.40909 16.4171 2.55798Z"
+                                            fill="#990000" />
+                                    </svg>
+                                    <p class="price-list__item--text">Личный менеджер 24/7</p>
+
+                                </li>
+                                <li class="price-list__item d-flex align-items-center">
+                                    <svg class="price-svg me-2" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.5259 2.10231C20.5185 2.06695 20.5041 2.03117 20.48 1.99582C19.4205 0.438478 16.7637 0.522629 15.1113 0.503434C14.9452 0.501482 14.8642 0.673363 14.9002 0.805229C14.7528 0.845353 14.6137 0.899249 14.4942 0.982207C12.7956 2.16141 11.986 4.63736 11.1839 6.44249C10.416 8.17074 9.54785 9.84693 8.80101 11.5851C8.4836 12.3239 7.6346 13.8154 7.50111 14.9495C6.02304 12.2423 4.65136 9.49146 3.33075 6.70091C3.26123 6.55397 3.10248 6.53597 2.97679 6.59247C2.64908 6.4015 2.22507 6.55039 1.87784 6.6379C1.4046 6.7573 0.910857 6.89784 0.468955 7.10854C0.397058 7.14281 0.356284 7.19161 0.330474 7.24431C0.17139 7.17632 -0.0466877 7.31242 0.00883473 7.5165C1.19855 11.8924 4.49628 15.5767 6.19069 19.7814C6.25218 19.9341 6.3796 20.007 6.51168 20.024C6.54313 20.0882 6.59714 20.1402 6.68053 20.1589C7.30396 20.299 7.92794 20.3733 8.5646 20.4243C9.12124 20.4688 9.77102 20.5817 10.3105 20.4163C10.4966 20.3592 10.5719 20.1847 10.5439 20.0276C10.5878 20.0194 10.6342 19.9935 10.6826 19.9402C10.7385 19.8789 10.6818 19.8002 10.6074 19.811C11.0522 19.7469 11.4589 17.7873 11.5835 17.447C11.9823 16.3585 12.4202 15.2839 12.858 14.2105C13.1114 13.5897 13.3955 12.9753 13.7003 12.3667C13.8194 12.1543 13.9298 11.9352 14.0369 11.7134C15.7747 8.44813 18.1574 5.38475 20.5104 2.6636C20.6701 2.47914 20.6401 2.25673 20.5259 2.10231ZM2.6391 7.41262C2.61394 7.36544 2.59041 7.31708 2.56601 7.26936C2.68454 7.24063 2.80046 7.20614 2.9024 7.15051C2.92192 7.20527 2.94437 7.25885 2.9641 7.31339C2.85132 7.29669 2.72737 7.33465 2.6391 7.41262ZM4.45085 11.0531C4.42872 11.0222 4.40877 10.99 4.38632 10.9591C4.38264 10.954 4.37754 10.9524 4.37364 10.9476C4.3179 10.7205 4.25728 10.4953 4.1895 10.2728C4.19059 10.2709 4.19156 10.2691 4.19265 10.2673C4.30391 10.507 4.41582 10.7463 4.5312 10.9843C4.50127 11.0027 4.4759 11.028 4.45085 11.0531ZM9.2736 19.6906C9.33097 19.6093 9.34495 19.5014 9.3224 19.4018C9.39343 19.3509 9.46088 19.295 9.52681 19.2371C9.51456 19.2879 9.49938 19.3375 9.48734 19.3884C9.45817 19.5124 9.49146 19.6099 9.55208 19.6812C9.45925 19.6826 9.36643 19.6864 9.2736 19.6906ZM11.5944 15.1212C11.5174 15.3165 11.4289 15.5228 11.3351 15.7359C11.3408 15.6906 11.3464 15.645 11.3511 15.5991C11.4654 15.2967 11.5888 14.9965 11.7122 14.6965C11.7384 14.6775 11.7657 14.6598 11.7914 14.6406C11.7254 14.8008 11.6579 14.9601 11.5944 15.1212ZM13.7602 10.6135C13.3762 11.2934 13.0105 11.9828 12.6691 12.6836C12.5624 12.8371 12.4505 12.9856 12.333 13.1286C12.7998 12.2309 13.3104 11.3562 13.8157 10.4794C13.7975 10.5243 13.7787 10.5688 13.7602 10.6135ZM16.4171 2.55798C16.4439 2.51124 16.4707 2.4645 16.4999 2.41831C16.6205 2.26768 16.7376 2.1099 16.8499 1.93823C16.8624 1.93813 16.8746 1.93682 16.8871 1.93693C16.96 1.95699 17.0328 1.97716 17.1057 1.99994C17.0324 2.00709 16.9579 2.03301 16.8902 2.10036C16.7316 2.2576 16.5748 2.40909 16.4171 2.55798Z"
+                                            fill="#990000" />
+                                    </svg>
+                                    <p class="price-list__item--text">Настройка Facebook, Instagram</p>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img class="prices-img position-absolute d-md-block d-none" src="./img/8-price/matebook.png" alt="">
+                <img class="prices-img-mob  d-md-none d-block" src="./img/8-price/matebook-mob.png" alt="">
+            </div>
+        </section>
+        <!-- price -->
+
+        <!-- about-us -->
+        <srction id="about" class="about-us">
+            <div class="container">
+                <div class="about-us-block position-relative">
+                    <h2 class="general-title general-title-uder">О нас</h2>
+                    <p class="about-text">Наша компания уже более 2-х лет работает в сфере
+                        строительства по всем регионам России.
+                        Мы сотрудничаем с уже более 50-ти компаниями - партнерами. Генерация лидов по строительству дает
+                        возможность нашей компании выделяться среди конкурентов, ведь мы окупаем вложения в рекламу
+                        и повышаем лидогенерацию на качество. <br> <br>
+
+                        Специалисты нашей компании помогают генерировать качественные лиды и приводить именно тех
+                        потенциальных клиентов, которые готовы заключить
+                        с вами сделку по строительству</p>
+                    <img class="about-man position-absolute" src="./img/9-about-us/about-man.png" alt="">
+                </div>
+            </div>
+        </srction>
+        <!-- about-us -->
+
+    </div>
+
+    <!-- form -->
+    <section class="form">
+        <div class="container bg-red position-relative overflow-hidden">
+            <div class="form-block d-flex align-items-center flex-column">
+                <h2 class="general-title color-white mb-2 text-center">Укажите свои данные для связи</h2>
+                <p class="form-text color-white mt-0 mb-3">Наш менеджер свяжется с вами в ближайшее время</p>
+
+                <form class="form-contact d-flex flex-column align-items-center w-100" action="">
+                    <div class="input-block d-flex flex-wrap justify-content-center align-items-center mb-1">
+                        <input class="input-from mx-sm-1 mx-0 my-1" placeholder="Ваше имя" type="text">
+                        <input class="input-from mx-sm-1 mx-0 my-1" placeholder="+7 (999) 999-99-99" type="tel">
+                    </div>
+                    <button class="general-btn bg-white more-btn text-dark position-relative mx-1">Хочу получать
+                        заявки</button>
+                </form>
+            </div>
+            <img class="form-fon-l position-absolute" src="./img/10-form/form-l-fon.png" alt="">
+            <img class="form-fon-r position-absolute" src="./img/10-form/form-r-fon.png" alt="">
+        </div>
+    </section>
+    <!-- form -->
+
+    <div class="wrapper-container">
+
+        <!-- questions -->
+        <section id="contacts" class="questions">
+            <div class="container bg-white">
+                <div
+                    class="question-general d-flex align-items-md-center align-items-start flex-sm-row flex-column justify-content-between">
+
+                    <div class="questions-block mb-sm-0 mb-4">
+                        <h1 class="question-title color-red mb-3">Остались вопросы?</h1>
+                        <p class="questions-text">
+                            Обращайтесь к нам — мы дадим вам всю необходимую информацию о том, как мы будем привлекать
+                            для
+                            вас клиентов
+                        </p>
+
+                        <div
+                            class="questions-social d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-between">
+                            <div class="social-block d-flex align-items-center mb-md-0 mb-3">
+                                <a href="#" class="social-icon__element me-xl-4 me-3">
+                                    <svg width="60" height="61" viewBox="0 0 60 61" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M42.495 36.2479C41.8096 35.891 38.3948 34.1957 37.7596 33.9663C37.1245 33.7241 36.6591 33.6094 36.2 34.3232C35.7347 35.0306 34.414 36.6048 33.999 37.0828C33.5965 37.5544 33.1877 37.6118 32.5023 37.2613C28.4272 35.1963 25.7545 33.5776 23.0692 28.906C22.3586 27.6632 23.7798 27.7525 25.1067 25.0693C25.3331 24.5977 25.2199 24.1962 25.0439 23.8393C24.8678 23.4824 23.4843 20.0281 22.9057 18.6197C22.346 17.2494 21.7674 17.4406 21.3461 17.4151C20.9436 17.3896 20.4845 17.3896 20.0192 17.3896C19.5538 17.3896 18.8055 17.5681 18.1703 18.2628C17.5351 18.9702 15.7429 20.6718 15.7429 24.1261C15.7429 27.5804 18.2269 30.9263 18.5665 31.3979C18.9187 31.8695 23.4528 38.9565 30.4144 42.0093C34.8165 43.934 36.5396 44.0997 38.7407 43.7683C40.0802 43.5643 42.8409 42.073 43.4132 40.4224C43.9854 38.7781 43.9854 37.3696 43.8157 37.0764C43.6459 36.7641 43.1805 36.5857 42.495 36.2479Z"
+                                            fill="#1A1A1A" />
+                                        <path
+                                            d="M55.8114 19.7306C54.3902 16.3538 52.3529 13.3228 49.7558 10.7195C47.1588 8.12245 44.1279 6.07876 40.7449 4.6639C37.2864 3.21131 33.6141 2.47559 29.8286 2.47559H29.7028C25.8922 2.49445 22.201 3.24904 18.7299 4.73307C15.3783 6.1668 12.3726 8.20419 9.8007 10.8012C7.22883 13.3983 5.21032 16.4167 3.81435 19.7809C2.36806 23.2646 1.63863 26.9684 1.6575 30.7791C1.67636 35.1431 2.7202 39.4757 4.67583 43.3493V52.9075C4.67583 54.5047 5.9712 55.8001 7.56839 55.8001H17.1327C21.0062 57.7557 25.3388 58.7996 29.7028 58.8184H29.8349C33.6015 58.8184 37.2549 58.089 40.6946 56.6616C44.0587 55.2593 47.0834 53.247 49.6741 50.6751C52.2711 48.1032 54.3148 45.0974 55.7422 41.7458C57.2262 38.2747 57.9808 34.5835 57.9996 30.7728C58.0185 26.9432 57.2765 23.2269 55.8114 19.7306ZM46.3099 47.2732C41.9019 51.6372 36.0539 54.0394 29.8286 54.0394H29.7217C25.9299 54.0205 22.1633 53.0773 18.8368 51.304L18.3086 51.021H9.45485V42.1671L9.17188 41.6389C7.39861 38.3124 6.45539 34.5457 6.43652 30.7539C6.41137 24.4845 8.80717 18.5987 13.2026 14.1655C17.5918 9.73224 23.4586 7.27982 29.728 7.25467H29.8349C32.979 7.25467 36.0287 7.86463 38.9024 9.07198C41.707 10.2479 44.2222 11.9394 46.3854 14.1026C48.5422 16.2595 50.24 18.7811 51.4159 21.5856C52.6358 24.4908 53.2458 27.5721 53.2332 30.7539C53.1955 37.017 50.7368 42.884 46.3099 47.2732Z"
+                                            fill="#1A1A1A" />
+                                    </svg>
+                                </a>
+
+                                <a href="#" class="social-icon__element me-xl-4 me-3">
+                                    <svg width="60" height="61" viewBox="0 0 60 61" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0)">
+                                            <path
+                                                d="M28.5049 0.828017C23.7174 0.88581 13.4247 1.67254 7.66776 6.95406C3.38549 11.1972 1.89034 17.4705 1.71509 25.2278C1.56968 32.9571 1.39444 47.4724 15.3859 51.4247V57.4445C15.3859 57.4445 15.2983 59.8532 16.8904 60.3472C18.8516 60.968 19.9683 59.1149 21.8326 57.1238L25.3095 53.1921C34.8826 53.9881 42.2148 52.1537 43.0593 51.8815C45.0019 51.2607 55.9434 49.8625 57.7313 35.3453C59.5657 20.3527 56.8383 10.9063 51.9147 6.6334H51.8849C50.399 5.26502 44.4277 0.913774 31.0869 0.865302C31.0869 0.865302 30.097 0.798188 28.5049 0.826152V0.828017ZM28.6689 5.04317C30.028 5.03385 30.8539 5.09164 30.8539 5.09164C42.1459 5.12147 47.5355 8.52006 48.8069 9.66473C52.9531 13.2181 55.0896 21.7341 53.5254 34.2509C52.0396 46.3874 43.1656 47.1555 41.5232 47.6794C40.8241 47.9031 34.3662 49.4952 26.2304 48.9713C26.2304 48.9713 20.1715 56.2831 18.2774 58.166C17.9773 58.496 17.6268 58.5929 17.4031 58.5444C17.0824 58.4661 16.9855 58.069 17.0041 57.5247L17.0619 47.534C5.19572 44.2528 5.89482 31.8721 6.02159 25.4049C6.16701 18.9377 7.38066 13.6468 10.9936 10.0637C15.8576 5.66584 24.5973 5.073 28.6652 5.04317H28.6689ZM29.5638 11.5085C29.4661 11.5075 29.3692 11.5259 29.2787 11.5625C29.1882 11.5992 29.1058 11.6533 29.0363 11.722C28.9668 11.7906 28.9116 11.8723 28.8738 11.9624C28.836 12.0524 28.8165 12.1491 28.8162 12.2468C28.8162 12.6644 29.1555 12.9943 29.5638 12.9943C31.4122 12.9592 33.2494 13.2903 34.9692 13.9687C36.689 14.647 38.2576 15.6591 39.5843 16.9466C42.2931 19.5771 43.613 23.1118 43.6634 27.7334C43.6634 28.1417 43.9934 28.481 44.411 28.481V28.4511C44.6078 28.4516 44.7968 28.3743 44.9368 28.236C45.0769 28.0977 45.1566 27.9097 45.1585 27.7129C45.2491 25.5375 44.8963 23.3665 44.1217 21.3317C43.3471 19.297 42.1668 17.441 40.6526 15.8765C37.7014 12.9925 33.9616 11.5066 29.5638 11.5066V11.5085ZM19.7371 13.2181C19.2094 13.141 18.6713 13.2469 18.2122 13.5182H18.173C17.1071 14.143 16.1469 14.9327 15.3281 15.8579C14.6476 16.6446 14.2785 17.4407 14.1816 18.2069C14.1238 18.6636 14.1629 19.1204 14.299 19.5566L14.3475 19.5865C15.1137 21.8385 16.1148 24.0048 17.3378 26.0443C18.9132 28.9097 20.8519 31.5596 23.1059 33.9284L23.173 34.0254L23.2793 34.1036L23.3464 34.1819L23.4247 34.2491C25.8021 36.5097 28.4584 38.4575 31.3293 40.0451C34.6104 41.8311 36.6015 42.6756 37.7965 43.0261V43.0448C38.147 43.151 38.4657 43.1995 38.7864 43.1995C39.8048 43.1249 40.769 42.7114 41.525 42.025C42.446 41.206 43.2269 40.2418 43.8368 39.1708V39.1521C44.4091 38.0746 44.2152 37.0548 43.3893 36.365C41.7354 34.9193 39.9468 33.6351 38.0481 32.5302C36.7767 31.8404 35.4848 32.258 34.9609 32.9571L33.8442 34.3647C33.2719 35.0638 32.2316 34.9668 32.2316 34.9668L32.2018 34.9855C24.4445 33.0037 22.3751 25.1495 22.3751 25.1495C22.3751 25.1495 22.2782 24.0813 22.9959 23.5369L24.3941 22.4109C25.0634 21.8665 25.5295 20.5764 24.8117 19.3031C23.7144 17.4018 22.4331 15.6128 20.9862 13.9619C20.6699 13.5727 20.2261 13.3079 19.7334 13.2143L19.7371 13.2181ZM30.8539 15.4328C29.8639 15.4328 29.8639 16.928 30.8632 16.928C32.0941 16.948 33.3091 17.2103 34.4386 17.7001C35.5681 18.1898 36.59 18.8973 37.446 19.7822C38.2268 20.6435 38.8268 21.6528 39.2104 22.7502C39.5941 23.8477 39.7535 25.0109 39.6794 26.1711C39.6828 26.3675 39.763 26.5547 39.9027 26.6927C40.0424 26.8306 40.2306 26.9084 40.427 26.9094L40.4568 26.9485C40.6546 26.9471 40.8439 26.8678 40.9838 26.7279C41.1237 26.5881 41.2029 26.3988 41.2044 26.2009C41.2715 23.2386 40.3505 20.7535 38.5441 18.7624C36.7282 16.7714 34.1947 15.6547 30.9601 15.4328H30.8539ZM32.0787 19.4522C31.0589 19.4224 31.0198 20.9474 32.0302 20.9772C34.4874 21.104 35.6805 22.3456 35.8371 24.8997C35.8405 25.0935 35.9197 25.2784 36.0577 25.4146C36.1956 25.5509 36.3815 25.6277 36.5754 25.6286H36.6052C36.7049 25.6243 36.8027 25.6002 36.893 25.5577C36.9833 25.5153 37.0642 25.4552 37.131 25.3811C37.1978 25.307 37.2492 25.2203 37.2822 25.1261C37.3151 25.032 37.329 24.9322 37.3229 24.8326C37.1477 21.5029 35.3319 19.6275 32.1085 19.4541H32.0787V19.4522Z"
+                                                fill="#1A1A1A" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="59.6571" height="59.6571" fill="white"
+                                                    transform="translate(0.171432 0.818359)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+
+                                <a href="#" class="social-icon__element">
+                                    <svg width="60" height="61" viewBox="0 0 60 61" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M51.5052 9.07334L5.266 26.6218C2.11037 27.8693 2.12862 29.6018 4.68703 30.3744L16.5585 34.0191L44.0255 16.9634C45.3243 16.1857 46.5109 16.604 45.5355 17.4562L23.2818 37.2223H23.2766L23.2818 37.2249L22.4629 49.2678C23.6626 49.2678 24.192 48.7262 24.8648 48.0871L30.631 42.5687L42.625 51.2878C44.8366 52.4865 46.4249 51.8705 46.9751 49.273L54.8486 12.754C55.6544 9.57384 53.615 8.13393 51.5052 9.07334Z"
+                                            fill="#1A1A1A" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <a class="qustions-number color-red" href="tel:+78005001871">+7 (800)
+                                500-18-71<br>Ldigital.ru</a>
+                        </div>
+                    </div>
+
+                    <div class="important-block d-flex flex-column align-items-center">
+                        <img class="mb-4" src="./img/11-questions/ttention.png" alt="">
+                        <h4 class="important-title color-red mb-3">Важно</h4>
+                        <p class="important-text">Мы берем <span>только одного партнера</span> в вашем регионе и
+                            <span>не работаем с конкурентами</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- questions -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-block py-md-4 py-3">
+                    <p class="footer-text text-center mx-auto d-block color-white">Все права защищены. Мы используем
+                        политику
+                        конфиденциальности</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- footer -->
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+
+    <!-- script -->
+    <script src="./js/script.js"></script>
+    <!-- script -->
+
+</body>
+
+</html>

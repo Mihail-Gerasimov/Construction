@@ -1,0 +1,1146 @@
+@media (max-width: 1520px) {
+    /* modal */
+    /* modal */
+
+    /* nav */
+    /* nav */
+
+    /* header */
+    /* header */
+
+    /* prod */
+    /* prod */
+
+    /* more */
+    /* more */
+
+    /* cases */
+    /* cases */
+
+    /* stages */
+    .stages-steps__text {
+        font-size: 17px;
+        line-height: 135%;
+        width: 265px;
+    }
+    .stages-number {
+        font-size: 54px;
+        line-height: 85%;
+    }
+    .s-2 {
+        margin-bottom: 0px;
+        margin-right: 145px;
+    }
+    .s-3 {
+        margin-right: 130px;
+    }
+    .s-4 {
+        margin-bottom: 0px;
+    }
+    .s-5 {
+        margin-top: 0px;
+        margin-right: 135px;
+    }
+    .s-6 {
+        margin-right: 105px;
+    }
+    .s-7 {
+        margin-right: 155px;
+        margin-top: 0px;
+    }
+    .pc-1 {
+        left: 30px;
+    }
+    .pc-2 {
+        left: 287px;
+    }
+    .pc-3 {
+        left: 588px;
+    }
+    .pc-4 {
+        left: 890px;
+        right: inherit;
+    }
+    .stages-line {
+        max-width: 860px;
+        top: 120px;
+    }
+    .stages-circle {
+        top: 113px;
+    }
+    /* stages */
+
+    /* price */
+    /* price */
+
+    /* about-us */
+    /* about-us */
+
+    /* form */
+    /* form */
+
+    /* questions */
+    /* questions */
+}
+@media (max-width: 1450px) {
+    /* modal */
+    /* modal */
+
+    /* nav */
+    /* nav */
+
+    /* header */
+    .header-content {
+        padding: 160px 0 190px 0;
+    }
+    .builder {
+        top: inherit;
+        bottom: -111px;
+        width: 800px;
+    }
+    .maket {
+        width: 800px;
+    }
+    /* header */
+
+    /* prod */
+    /* prod */
+
+    /* more */
+    /* more */
+
+    /* cases */
+    .cases .container {
+        padding: 130px 70px;
+    }
+    .block-statistics {
+        width: 700px;
+    }
+    .title-cases {
+        left: -215px;
+        top: 145px;
+        font-size: 70px;
+        line-height: 81px;
+    }
+    .cities-title {
+        font-size: 30px;
+        margin-bottom: 55px;
+    }
+    .cases-nubber {
+        width: 125px;
+        font-size: 60px;
+        line-height: 90%;
+    }
+    .applications-per-month__item {
+        font-size: 19px;
+        line-height: 100%;
+    }
+    .block__cities {
+        height: 255px;
+        margin-right: 55px;
+    }
+    /* cases */
+
+    /* stages */
+    .stages-title {
+        max-width: 655px;
+    }
+    .stages-text {
+        max-width: 590px;
+    }
+    /* stages */
+
+    /* price */
+    /* price */
+
+    /* about-us */
+    .about-text {
+        font-size: 20px;
+        max-width: 525px;
+    }
+    .about-man {
+        width: 490px;
+    }
+
+    /* about-us */
+
+    /* form */
+    /* form */
+
+    /* questions */
+    /* questions */
+}
+@media (max-width: 1200px) {
+    /* modal */
+    /* modal */
+
+    /* nav */
+    .logo {
+        width: 190px;
+    }
+    .navigation-block__item {
+        font-size: 20px;
+        letter-spacing: 0.01em;
+    }
+    .number-desctop {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    /* nav */
+
+    /* header */
+    .header-content {
+        padding: 120px 0 150px 0;
+    }
+    .title-header {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .header-text {
+        font-size: 26px;
+        letter-spacing: 0.02em;
+        max-width: 560px;
+    }
+    .header-btn {
+        max-width: 320px;
+    }
+    .header-btn::after {
+        background-size: 50px;
+        width: 51px;
+        height: 56px;
+        bottom: -55px;
+        background-repeat: no-repeat;
+    }
+    .builder {
+        bottom: -90px;
+        width: 680px;
+    }
+    .maket {
+        width: 700px;
+    }
+    /* header */
+
+    /* prod */
+    .prod-line {
+        right: 0;
+        height: 1px;
+        width: 130px;
+        top: 40px;
+    }
+    .prid-step__item--text {
+        font-size: 20px;
+    }
+    .prod-step__item {
+        width: 280px;
+    }
+    .prod-grid {
+        width: 600px;
+        bottom: 0;
+    }
+    /* prod */
+
+    /* more */
+    .more-block {
+        height: 425px;
+    }
+    .many-more {
+        margin-right: 50px;
+    }
+    .more-information {
+        font-size: 26px;
+        max-width: 455px;
+    }
+    .m-phone {
+        width: 400px;
+    }
+
+    /* more */
+
+    /* cases */
+    .cases .container {
+        padding: 100px 40px;
+    }
+    .title-cases {
+        left: -165px;
+        top: 120px;
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .block__cities {
+        height: 210px;
+        margin-right: 55px;
+    }
+    .cities-title {
+        font-size: 25px;
+        margin-bottom: 35px;
+    }
+    .cases-nubber {
+        width: 100px;
+        font-size: 48px;
+        line-height: 90%;
+    }
+    .block-statistics {
+        width: 520px;
+    }
+    .transform-top {
+        width: 700px;
+    }
+    .transform-center {
+        max-width: 1000px;
+    }
+    .transform-bottom {
+        max-width: 700px;
+    }
+    /* cases */
+
+    /* stages */
+    .stages-steps__text {
+        font-size: 14px;
+        line-height: 135%;
+        width: 200px;
+    }
+    .s-1 {
+        margin-right: 30px;
+    }
+    .stages-number {
+        font-size: 44px;
+        line-height: 85%;
+    }
+    .s-2 {
+        margin-right: 127px;
+    }
+    .s-3 {
+        margin-right: 70px;
+    }
+    .s-5 {
+        margin-right: 115px;
+    }
+    .s-6 {
+        margin-right: 103px;
+    }
+    .s-7 {
+        margin-right: 104px;
+    }
+    .stages-line {
+        max-width: 676px;
+        top: 118px;
+        left: 25px;
+    }
+    .stages-circle {
+        top: 114px;
+        width: 10px;
+        height: 10px;
+    }
+    .pc-1 {
+        left: 20px;
+    }
+    .pc-2 {
+        left: 250px;
+    }
+    .pc-3 {
+        left: 488px;
+    }
+    .pc-4 {
+        left: 697px;
+    }
+    .stages-text {
+        font-size: 25px;
+        line-height: 135%;
+        max-width: 490px;
+    }
+    /* stages */
+
+    /* price */
+    /* price */
+
+    /* about-us */
+    .about-text {
+        font-size: 18px;
+        max-width: 445px;
+    }
+    .about-man {
+        width: 410px;
+    }
+    .about-us-block {
+        padding: 70px 0 70px;
+    }
+    /* about-us */
+
+    /* form */
+    /* form */
+
+    /* questions */
+    .questions-text {
+        font-size: 22px;
+        line-height: 26px;
+        max-width: 425px;
+        margin-bottom: 50px;
+    }
+    .question-title {
+        font-size: 58px;
+        line-height: 68px;
+    }
+    .qustions-number {
+        font-size: 24px;
+    }
+    .social-icon__element svg {
+        width: 40px;
+    }
+    .important-text {
+        max-width: 235px;
+    }
+    .important-block {
+        padding: 35px 10px 35px;
+    }
+    /* questions */
+}
+@media (max-width: 992px) {
+    /* modal */
+    /* modal */
+
+    /* nav */
+    .logo {
+        width: 160px;
+    }
+    .navigation-block__item {
+        font-size: 16px;
+        letter-spacing: 0.01em;
+    }
+    .number-desctop {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    /* nav */
+
+    /* header */
+    .header-content {
+        padding: 80px 0 110px 0;
+    }
+    .title-header {
+        font-size: 40px;
+        line-height: 47px;
+    }
+    .header-text {
+        font-size: 22px;
+        letter-spacing: 0.02em;
+        max-width: 300px;
+    }
+    .header-btn {
+        max-width: 280px;
+    }
+    .header-btn::after {
+        background-size: 38px;
+        width: 39px;
+        height: 43px;
+        bottom: -42px;
+    }
+    .builder {
+        bottom: -80px;
+        width: 550px;
+    }
+    .maket {
+        width: 525px;
+    }
+    /* header */
+
+    /* prod */
+    .prod-block {
+        padding-bottom: 80px;
+    }
+    .prod-text {
+        margin-bottom: 30px;
+        font-size: 21px;
+        letter-spacing: 0.02em;
+    }
+    .prod-step__item {
+        width: 235px;
+    }
+    .prid-step__item--text {
+        font-size: 17px;
+    }
+    .prod-line {
+        width: 100px;
+    }
+    /* prod */
+
+    /* more */
+    .more-information {
+        font-size: 22px;
+        max-width: 380px;
+    }
+    .more-block {
+        height: 360px;
+    }
+    .m-phone {
+        width: 350px;
+    }
+    /* more */
+
+    /* cases */
+    .cases .container {
+        padding: 60px 20px;
+    }
+    .block__cities {
+        height: 200px;
+    }
+    .block-statistics {
+        width: 400px;
+    }
+    /* cases */
+
+    /* stages */
+    /* stages */
+
+    /* price */
+    .price__card {
+        width: 270px;
+    }
+    .price-title-card {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        padding: 15px 0 15px 10px;
+    }
+    .price-title-money {
+        font-size: 30px;
+        line-height: 35px;
+        letter-spacing: 0.01em;
+        padding: 12px 0 12px 10px;
+    }
+    .price-list {
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+        padding: 0 0 20px 10px;
+    }
+    /* price */
+
+    /* about-us */
+    /* about-us */
+
+    /* form */
+    /* form */
+
+    /* questions */
+    /* questions */
+}
+@media (max-width: 880px) {
+    /* stages */
+    .s-1 {
+        margin-right: 15px;
+    }
+    .stages-steps__text {
+        font-size: 13px;
+        width: 180px;
+    }
+    .stages-number {
+        font-size: 40px;
+        line-height: 85%;
+    }
+    .s-2 {
+        margin-right: 104px;
+    }
+    .s-3 {
+        margin-right: 61px;
+    }
+    .s-5 {
+        margin-right: 84px;
+    }
+    .s-6 {
+        margin-right: 84px;
+    }
+    .s-7 {
+        margin-right: 84px;
+    }
+    .stages-line {
+        max-width: 586px;
+        top: 111px;
+        left: 22px;
+    }
+    .stages-circle {
+        top: 107px;
+    }
+    .pc-2 {
+        left: 213px;
+    }
+    .pc-3 {
+        left: 410px;
+    }
+    .pc-4 {
+        left: 605px;
+    }
+    /* stages */
+    /* about-us */
+    .about-us .container {
+        background-size: 500px;
+    }
+    .about-text {
+        max-width: 370px;
+    }
+    .about-man {
+        width: 330px;
+    }
+    .about-us-block {
+        padding: 25px 0 60px;
+    }
+    /* about-us */
+    /* questions */
+    .question-title {
+        font-size: 45px;
+        line-height: 52px;
+    }
+    .questions-text {
+        font-size: 19px;
+        line-height: 23px;
+        max-width: 370px;
+        margin-bottom: 30px;
+    }
+    .qustions-number {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .important-text {
+        max-width: 205px;
+    }
+    .important-block {
+        padding: 25px 10px 25px;
+    }
+    /* questions */
+}
+@media (max-width: 810px) {
+    /* modal */
+    /* modal */
+
+    /* nav */
+    /* nav */
+
+    /* header */
+    /* header */
+
+    /* prod */
+    .prod-step__item {
+        width: 210px;
+    }
+    .prid-step__item--text {
+        font-size: 15px;
+    }
+    .prod-line {
+        width: 85px;
+    }
+    /* prod */
+
+    /* more */
+    .more-fon {
+        background-size: 470px;
+    }
+    /* more */
+
+    /* cases */
+    /* cases */
+
+    /* stages */
+    /* stages */
+
+    /* price */
+    /* price */
+
+    /* about-us */
+    /* about-us */
+
+    /* form */
+    /* form */
+
+    /* questions */
+    /* questions */
+}
+@media (max-width: 767px) {
+    /* modal */
+    /* modal */
+
+    /* nav */
+    .logo {
+        width: 130px;
+    }
+    /* nav */
+
+    /* header */
+    .header-content {
+        padding: 50px 0 80px 0;
+    }
+    .title-header {
+        font-size: 33px;
+        line-height: 38px;
+    }
+    .header-text {
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        max-width: 250px;
+    }
+    .builder {
+        bottom: -57px;
+        width: 390px;
+    }
+    .maket {
+        width: 430px;
+    }
+    /* header */
+
+    /* prod */
+    .prod-block {
+        padding-bottom: 40px;
+    }
+    .prod-text {
+        font-size: 18px;
+        letter-spacing: 0.01em;
+    }
+    .grid-mobile {
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    .prod-step__item {
+        width: 270px;
+    }
+    .prid-step__item--text {
+        font-size: 19px;
+    }
+    .prod-line {
+        height: 30px;
+        width: 1px;
+        top: inherit;
+        bottom: -40px;
+        left: 44px;
+    }
+    /* prod */
+
+    /* more */
+    .more-information {
+        font-size: 18px;
+        max-width: 310px;
+    }
+    .m-phone {
+        width: 286px;
+    }
+    .more-block {
+        height: 310px;
+    }
+    .more-fon {
+        padding-bottom: 20px;
+        background-size: 400px;
+    }
+    .many-more {
+        margin-right: 25px;
+    }
+    /* more */
+
+    /* cases */
+    .cities-title {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .block__cities {
+        height: 245px;
+        margin-right: 30px;
+    }
+    .block-statistics {
+        width: 320px;
+    }
+    .block-statistics img {
+        padding: 10px;
+        border-radius: 0px;
+    }
+    .cases-nubber {
+        width: 140px;
+        font-size: 48px;
+        line-height: 90%;
+    }
+    .applications-per-month__item {
+        font-size: 18px;
+        width: 185px;
+    }
+    .applications-per-month__item br {
+        display: none;
+    }
+    .transform-top {
+        width: 480px;
+    }
+    .transform-center {
+        max-width: 600px;
+    }
+    .transform-bottom {
+        max-width: 480px;
+    }
+    /* cases */
+
+    /* stages */
+    .stages-block {
+        padding: 30px 0 60px;
+    }
+    .stages-title {
+        max-width: inherit;
+    }
+    .stages-text {
+        max-width: inherit;
+    }
+    .stages-block__info {
+        margin-bottom: 25px;
+    }
+    .stages-steps__text {
+        font-size: 18px;
+        width: 400px;
+    }
+    .stages-line {
+        max-height: 405px;
+        width: 1px;
+        height: 100%;
+        top: 17px;
+        left: 0px;
+        max-width: inherit;
+    }
+    .stages-circle {
+        top: inherit;
+        width: 8px;
+        height: 8px;
+    }
+    .pc-1 {
+        top: 14px;
+        left: -3.5px;
+    }
+    .pc-2 {
+        top: 131px;
+        left: -3.5px;
+    }
+    .pc-3 {
+        top: 274px;
+        left: -3.5px;
+    }
+    .pc-4 {
+        top: 415px;
+        left: -3.5px;
+    }
+    .stages-btn {
+        margin-left: -10px;
+    }
+    /* stages */
+
+    /* price */
+    .price-block {
+        padding-top: 60px;
+    }
+    /* price */
+
+    /* about-us */
+    .about-text {
+        max-width: initial;
+    }
+    .about-man {
+        margin: 30px auto 0;
+        position: inherit !important;
+        width: 330px;
+        top: inherit;
+        transform: none;
+    }
+    .about-us .container {
+        overflow: hidden;
+        background-size: auto;
+    }
+    /* about-us */
+
+    /* form */
+    .form-fon-r {
+        width: 300px;
+    }
+    .form-fon-l {
+        left: -70px;
+        width: 370px;
+    }
+    .form-text {
+        font-size: 18px;
+        line-height: 125%;
+    }
+    .input-from {
+        font-size: 18px;
+        padding: 12px 0 12px 20px;
+    }
+    /* form */
+
+    /* questions */
+    .question-general {
+        padding: 60px 0 50px;
+    }
+    .questions-text {
+        font-size: 16px;
+        line-height: 19px;
+        max-width: 280px;
+        margin-bottom: 15px;
+    }
+    .question-title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    /* questions */
+
+    /* footer */
+    .footer-text {
+        font-size: 14px;
+        line-height: 125%;
+    }
+    /* footer */
+}
+@media (max-width: 575px) {
+    /* modal */
+    .modal-dialog {
+        max-width: 310px;
+    }
+    .modal-header {
+        padding: 15px 20px 55px;
+    }
+    .modal-form {
+        margin-top: 20px;
+    }
+    .modal-title {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .modal-text {
+        font-size: 15px;
+    }
+    .modal-input {
+        font-size: 14px;
+        padding: 13px 0 13px 20px;
+    }
+    .modal-thanks {
+        width: 310px;
+        height: 350px;
+    }
+    .closed {
+        right: 20px;
+        top: 15px;
+        cursor: pointer;
+    }
+    /* modal */
+
+    /* nav */
+    /* nav */
+
+    /* header */
+    .header .container {
+        background-color: #ffffff;
+    }
+    .header-content {
+        padding: 0px 0 60px 0;
+    }
+    .header-content__mobile {
+        overflow: hidden;
+        display: flex !important;
+        align-items: center;
+        justify-content: start;
+    }
+    .maket {
+        width: 100%;
+    }
+    .builder {
+        top: 30px;
+        right: 50%;
+        z-index: 0;
+        bottom: inherit;
+        width: 100%;
+        transform: translateX(45%);
+    }
+    .cloud {
+        z-index: 10;
+    }
+    .title-header {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .header-text {
+        font-size: 22px;
+        letter-spacing: 0.02em;
+        max-width: 100%;
+    }
+    /* header */
+
+    /* prod */
+    .prod-step__item {
+        width: auto;
+    }
+    .prod-text span {
+        display: none;
+    }
+    .grid-mobile {
+        bottom: 0;
+        top: inherit;
+    }
+    /* prod */
+
+    /* more */
+    .more-fon {
+        padding-bottom: 0px;
+        background-size: contain;
+        background-position-x: -300px;
+        background-position-y: 245px;
+    }
+    .many-more {
+        margin-right: 0px;
+        margin-bottom: 20px;
+        padding-top: 30px;
+    }
+    .more-block {
+        height: auto;
+    }
+    .more-information {
+        text-align: center;
+        max-width: 250px;
+    }
+    .m-phone {
+        margin-left: 80px;
+        width: 235px;
+    }
+    /* more */
+
+    /* cases */
+    .cases .container {
+        overflow: hidden;
+    }
+    .block__cities {
+        height: auto;
+        margin-right: 0px;
+        position: inherit;
+    }
+    .applications-per-month__item {
+        width: auto;
+    }
+    .block-statistics {
+        width: auto;
+    }
+    .cases .container {
+        padding: 60px 0 60px 0;
+    }
+    .cases-nubber {
+        border-radius: 0px 5px 5px 0;
+    }
+    .general-title-unde-cases::before {
+        left: 19px;
+    }
+    .cases-block {
+        margin-bottom: 35px;
+    }
+    .transform-top {
+        width: 580px;
+    }
+    /* cases */
+
+    /* stages */
+    .stages-text {
+        font-size: 18px;
+    }
+    /* stages */
+
+    /* price */
+    /* price */
+
+    /* about-us */
+    /* about-us */
+
+    /* form */
+    .form-fon-r {
+        width: 150px;
+    }
+    .form-fon-l {
+        left: -55px;
+        width: 300px;
+    }
+    .input-from {
+        width: 100%;
+        max-width: 385px;
+    }
+    .form .container {
+        padding: 40px 20px 60px;
+    }
+    /* form */
+
+    /* questions */
+    .important-block {
+        margin: 0 auto;
+        padding: 35px 30px 35px;
+    }
+    .questions-text {
+        max-width: initial;
+    }
+    .important-text {
+        max-width: 220px;
+    }
+    /* questions */
+}
+@media (max-width: 475px) {
+    /* modal */
+    /* modal */
+
+    /* nav */
+    /* nav */
+
+    /* header */
+    .title-header {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .header-text {
+        font-size: 18px;
+        letter-spacing: 0.01em;
+        max-width: 100%;
+    }
+    .header-btn {
+        max-width: 100%;
+    }
+    .header-btn::after {
+        right: 0;
+        background-size: 38px;
+        width: 39px;
+        height: 43px;
+        bottom: -42px;
+    }
+    /* header */
+
+    /* prod */
+    /* prod */
+
+    /* more */
+    .more-fon {
+        background-size: contain;
+        background-position-x: -215px;
+        background-position-y: 255px;
+    }
+    /* more */
+
+    /* cases */
+    /* cases */
+
+    /* stages */
+    .stages-steps__text {
+        width: 285px;
+    }
+    .pc-3 {
+        top: 298px;
+    }
+    .pc-4 {
+        top: 464px;
+    }
+    .stages-line {
+        max-height: 450px;
+    }
+    /* stages */
+
+    /* price */
+    /* price */
+
+    /* about-us */
+    /* about-us */
+
+    /* form */
+    /* form */
+
+    /* questions */
+    /* questions */
+}
